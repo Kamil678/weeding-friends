@@ -1,13 +1,14 @@
 <template>
-  <a :href="href" @click="$emit('handleClick')" class="basic-button">{{
+  <RouterLink :to="href" @click="$emit('handleClick')" class="basic-button">{{
     text
-  }}</a>
+  }}</RouterLink>
 </template>
 <script setup>
 import { defineProps, defineEmits } from "vue";
+import { RouterLink } from "vue-router";
 
 const props = defineProps({
-  text: {
+  href: {
     type: String,
     required: true,
   },
