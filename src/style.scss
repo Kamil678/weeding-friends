@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.page {
+  margin-top: 125px;
+}
+
+.quote {
+  display: none;
+  position: absolute;
+  font-family: "Caudex", serif;
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  font-size: 50px;
+  color: #fff;
+
+  @media (min-width: $lg-screen) {
+    display: block;
+  }
+
+  &.small-screen {
+    display: block;
+    position: relative;
+    left: 0;
+    transform: translateX(0);
+    color: $primary-color;
+    font-size: 30px;
+    line-height: 36px;
+
+    @media (min-width: $md-screen) {
+      font-size: 40px;
+      line-height: 46px;
+    }
+
+    @media (min-width: $lg-screen) {
+      display: none;
+    }
+  }
+}
