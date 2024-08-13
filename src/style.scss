@@ -12,6 +12,14 @@ body {
   margin-top: 125px;
 }
 
+.page-wrap {
+  padding: 30px;
+
+  @media (min-width: $sm-screen) {
+    padding: 50px;
+  }
+}
+
 .quote {
   display: none;
   position: absolute;
@@ -44,5 +52,31 @@ body {
     @media (min-width: $lg-screen) {
       display: none;
     }
+  }
+}
+
+.page-title {
+  font-family: "Caudex", serif;
+  font-size: 50px;
+  line-height: 56px;
+  text-align: center;
+  margin-bottom: 3.125rem;
+  font-size: 30px;
+  line-height: 36px;
+
+  @media (min-width: $md-screen) {
+    font-size: 40px;
+    line-height: 46px;
+    margin-bottom: 5rem;
+  }
+
+  @media (min-width: $lg-screen) {
+    font-size: 50px;
+    line-height: 56px;
+  }
+
+  .name {
+    text-transform: uppercase;
+    color: $primary-color;
   }
 }
