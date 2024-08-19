@@ -1,5 +1,5 @@
 <template>
-  <main class="page">
+  <main class="page home-page">
     <Slider />
     <SecondaryMainHomeSection />
     <ThirdMainHomeSection />
@@ -11,4 +11,8 @@ import SecondaryMainHomeSection from "../components/SecondaryMainHomeSection.vue
 import ThirdMainHomeSection from "../components/ThirdMainHomeSection.vue";
 </script>
 
-<style lang="scss"></style>
+<style lang="scss">
+.home-page {
+  margin-top: 125px;
+}
+</style>

@@ -46,15 +46,19 @@ import Button from "../components/Button.vue";
 
 <style lang="scss">
 .about-page {
-  padding: 50px 0 100px 0;
+  padding: 0 30px 30px 30px;
+
+  @media (min-width: $lg-screen) {
+    padding: 0 50px 100px 50px;
+  }
 
   .about-us-wrap {
     display: flex;
     flex-direction: column;
-    max-width: 1200px;
+    max-width: 500px;
     margin: 0 auto;
-    margin-top: 3.125rem;
-    background-color: $gray-color;
+    margin-top: 1.5rem;
+    background-color: transparent;
 
     &.first {
       padding-left: 30px;
@@ -64,29 +68,73 @@ import Button from "../components/Button.vue";
       padding-right: 30px;
     }
 
+    @media (min-width: $md-screen) {
+      max-width: 600px;
+    }
+
+    @media (min-width: $lg-screen) {
+      max-width: 1200px;
+      margin-top: 3.125rem;
+      background-color: $gray-color;
+    }
+
+    @media (min-width: $xl-screen) {
+      max-width: 1200px;
+    }
+
+    @media (min-width: $xxl-screen) {
+      max-width: 1200px;
+    }
+
     .about-container {
-      display: grid;
+      display: flex;
+      flex-direction: column;
       align-items: center;
-      //gap: 50px;
 
       &.first {
-        grid-template-columns: 1fr 1fr;
+        flex-direction: column-reverse;
+        margin-bottom: 30px;
       }
 
       &.second {
         grid-template-columns: 1fr 1fr;
       }
 
+      @media (min-width: $lg-screen) {
+        flex-direction: row;
+        align-items: center;
+
+        &.first {
+          flex-direction: row;
+          //grid-template-columns: 1fr 1fr;
+          margin-bottom: 0;
+        }
+
+        &.second {
+          grid-template-columns: 1fr 1fr;
+        }
+      }
+
       img {
         width: 100%;
+
+        @media (min-width: $lg-screen) {
+          width: 50%;
+        }
       }
 
       .info-container {
         display: flex;
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
         gap: 20px;
-        padding: 0 50px 0 30px;
+        padding: 30px 20px;
+        background-color: $gray-color;
+
+        @media (min-width: $lg-screen) {
+          align-items: flex-start;
+          padding: 20px 50px 20px 30px;
+        }
 
         .owner-info {
           margin-bottom: 20px;
@@ -97,8 +145,17 @@ import Button from "../components/Button.vue";
         }
 
         .info {
-          font-size: 18px;
-          line-height: 24px;
+          font-size: 16px;
+          line-height: 20px;
+        }
+
+        .info,
+        .owner-name {
+          text-align: center;
+
+          @media (min-width: $lg-screen) {
+            text-align: left;
+          }
         }
 
         .contact-me-btn {
