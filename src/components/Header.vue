@@ -95,10 +95,9 @@ const changeLanguageText = computed(() =>
   top: 0;
   left: 0;
   width: 100%;
-  padding: 2.3rem 2rem;
+  padding: 2.3rem 2rem 0 2rem;
   z-index: 9999;
   background-color: #fff;
-  //min-height: 125px;
 
   .main-nav {
     width: 100%;
