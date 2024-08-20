@@ -10,7 +10,7 @@
         :style="{ backgroundImage: `url(${slide.src})` }"
         class="image-container"
       ></div>
-      <h1 class="quote">
+      <h1 v-if="index === 0" class="quote">
         {{ $t("quote") }}
       </h1>
     </div>

@@ -26,7 +26,7 @@
       </div>
       <div class="image-container">
         <img
-          src="../assets/footer-iamge.jpg"
+          src="../assets/footer-image.jpg"
           alt="Photo of the owners of Wedding Friends"
           width="300"
         />
