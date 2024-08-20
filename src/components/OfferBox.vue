@@ -6,8 +6,8 @@
     <div class="offer-info">
       <h3 class="offer-title">{{ offer.title }}</h3>
       <p class="offer-text">{{ offer.firstText }}</p>
-      <p class="offer-text">{{ offer.secondText }}</p>
-      <div v-if="showMoreInfo" v-html="offer.moreInfo"></div>
+      <p v-if="offer.secondText" class="offer-text">{{ offer.secondText }}</p>
+      <div v-if="showMoreInfo && offer.moreInfo" v-html="offer.moreInfo"></div>
       <button @click="showMoreInfo = !showMoreInfo" class="see-more-offer">
         {{ showMoreInfo ? $t("seeLess") : $t("seeMore") }}
       </button>
