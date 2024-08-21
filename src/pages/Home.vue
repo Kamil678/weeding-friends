@@ -13,6 +13,6 @@ import ThirdMainHomeSection from "../components/ThirdMainHomeSection.vue";
 
 <style lang="scss">
 .home-page {
-  margin-top: 125px;
+  margin-top: 100px;
 }
 </style>

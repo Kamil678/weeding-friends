@@ -40,12 +40,13 @@ const offers = [
     </ul>
     `,
     rightImage: false,
+    hasShowMoreButton: true,
   },
   {
     id: 2,
     src: new URL("../assets/gallery/image-20.jpg", import.meta.url).href,
     alt: "Guest list board",
-    title: t("offer1=2Title"),
+    title: t("offer2Title"),
     firstText: t("offer2FirstText"),
     secondText: t("offer2SecondText"),
     moreInfo: `
@@ -60,6 +61,7 @@ const offers = [
     </ul>
     `,
     rightImage: true,
+    hasShowMoreButton: true,
   },
   {
     id: 3,
@@ -84,6 +86,7 @@ const offers = [
     </ul>
     `,
     rightImage: false,
+    hasShowMoreButton: true,
   },
   {
     id: 4,
@@ -92,10 +95,11 @@ const offers = [
     title: t("offer4Title"),
     firstText: t("offer4FirstText"),
     moreInfo: `
-    <p class="offer-text">${t("offer4AdditionalText1")}</p>
-    <p class="offer-text">${t("offer4AdditionalText2")}</p>
+    <p class="offer-more-text">${t("offer4AdditionalText1")}</p>
+    <p class="offer-more-text">${t("offer4AdditionalText2")}</p>
     `,
     rightImage: true,
+    hasShowMoreButton: false,
   },
   {
     id: 5,
@@ -104,10 +108,11 @@ const offers = [
     title: t("offer5Title"),
     firstText: t("offer5FirstText"),
     moreInfo: `
-    <p class="offer-text">${t("offer5AdditionalText1")}</p>
-    <p class="offer-text">${t("offer5AdditionalText2")}</p>
+    <p class="offer-more-text">${t("offer5AdditionalText1")}</p>
+    <p class="offer-more-text">${t("offer5AdditionalText2")}</p>
     `,
     rightImage: false,
+    hasShowMoreButton: false,
   },
   {
     id: 6,
@@ -116,11 +121,12 @@ const offers = [
     title: t("offer6Title"),
     firstText: t("offer6FirstText"),
     moreInfo: `
-    <p class="offer-text">${t("offer6AdditionalText1")}</p>
-    <p class="offer-text">${t("offer6AdditionalText2")}</p>
-    <p class="offer-text">${t("offer6AdditionalText3")}</p>
+    <p class="offer-more-text">${t("offer6AdditionalText1")}</p>
+    <p class="offer-more-text">${t("offer6AdditionalText2")}</p>
+    <p class="offer-more-text">${t("offer6AdditionalText3")}</p>
     `,
     rightImage: true,
+    hasShowMoreButton: true,
   },
   {
     id: 7,
@@ -130,10 +136,11 @@ const offers = [
     firstText: t("offer7FirstText"),
     secondText: t("offer7SecondText"),
     moreInfo: `
-    <p class="offer-text">${t("offer7AdditionalText1")}</p>
-    <p class="offer-text">${t("offer7AdditionalText2")}</p>
+    <p class="offer-more-text">${t("offer7AdditionalText1")}</p>
+    <p class="offer-more-text">${t("offer7AdditionalText2")}</p>
     `,
     rightImage: false,
+    hasShowMoreButton: false,
   },
   {
     id: 8,
@@ -142,6 +149,7 @@ const offers = [
     title: t("offer8Title"),
     firstText: t("offer8FirstText"),
     rightImage: true,
+    hasShowMoreButton: false,
   },
 ];
 </script>
@@ -150,7 +158,7 @@ const offers = [
 .offer-page {
   margin-left: 2rem;
   margin-right: 2rem;
-  margin-bottom: 100px;
+  margin-bottom: 110px;
   max-width: 1600px;
 
   @media (min-width: $xl-screen) {
@@ -170,7 +178,11 @@ const offers = [
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 100px;
+    gap: 70px;
+
+    @media (min-width: $xl-screen) {
+      gap: 150px;
+    }
   }
 }
 </style>
