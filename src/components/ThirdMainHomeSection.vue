@@ -55,7 +55,7 @@ const offers = [
 
     @media (min-width: $md-screen) {
       font-size: 40px;
-      line-height: 444px;
+      line-height: 44px;
     }
 
     @media (min-width: $lg-screen) {

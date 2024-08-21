@@ -125,7 +125,7 @@ onBeforeUnmount(() => {
     height: 100%;
     width: 100%;
     position: relative;
-    height: calc(100vh - 125px);
+    height: calc(100vh - 100px);
     overflow: hidden;
   }
 }

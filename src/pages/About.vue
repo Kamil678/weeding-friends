@@ -1,5 +1,5 @@
 <template>
-  <div class="page about-page">
+  <div class="page page-wrap about-page">
     <h1 class="page-title">{{ $t("navAboutUs") }}</h1>
     <div class="about-us-wrap">
       <div class="about-container first">
@@ -46,18 +46,18 @@ import Button from "../components/Button.vue";
 
 <style lang="scss">
 .about-page {
-  padding: 0 30px 30px 30px;
+  // padding: 0 30px 30px 30px;
 
-  @media (min-width: $lg-screen) {
-    padding: 0 50px 100px 50px;
-  }
+  // @media (min-width: $lg-screen) {
+  //   padding: 0 50px 100px 50px;
+  // }
 
   .about-us-wrap {
     display: flex;
     flex-direction: column;
     max-width: 500px;
     margin: 0 auto;
-    margin-top: 1.5rem;
+    //margin-top: 1.5rem;
     background-color: transparent;
 
     &.first {
@@ -74,7 +74,7 @@ import Button from "../components/Button.vue";
 
     @media (min-width: $lg-screen) {
       max-width: 1200px;
-      margin-top: 3.125rem;
+      //margin-top: 3.125rem;
       background-color: $gray-color;
     }
 

@@ -10,15 +10,20 @@
           <button @click="openMenu = false" class="close-menu">&times;</button>
         </li>
         <li class="nav-list-element">
-          <router-link to="/" class="nav-list-link" active-class="active">{{
-            $t("navHome")
-          }}</router-link>
+          <router-link
+            to="/"
+            class="nav-list-link"
+            active-class="active"
+            @click="openMenu = false"
+            >{{ $t("navHome") }}</router-link
+          >
         </li>
         <li class="nav-list-element">
           <router-link
             to="/about"
             class="nav-list-link"
             active-class="active"
+            @click="openMenu = false"
             >{{ $t("navAboutUs") }}</router-link
           >
         </li>
@@ -27,6 +32,7 @@
             to="/offer"
             class="nav-list-link"
             active-class="active"
+            @click="openMenu = false"
             >{{ $t("navOffer") }}</router-link
           >
         </li>
@@ -35,6 +41,7 @@
             to="/gallery"
             class="nav-list-link"
             active-class="active"
+            @click="openMenu = false"
             >{{ $t("navGallery") }}</router-link
           >
         </li>
@@ -43,6 +50,7 @@
             to="/opinions"
             class="nav-list-link"
             active-class="active"
+            @click="openMenu = false"
             >{{ $t("navOpinions") }}</router-link
           >
         </li>
@@ -51,6 +59,7 @@
             to="/contact"
             class="nav-list-link"
             active-class="active"
+            @click="openMenu = false"
             >{{ $t("navContact") }}</router-link
           >
         </li>
@@ -95,7 +104,7 @@ const changeLanguageText = computed(() =>
   top: 0;
   left: 0;
   width: 100%;
-  padding: 2.3rem 2rem 0 2rem;
+  padding: 1.5rem 2rem;
   z-index: 9999;
   background-color: #fff;
 

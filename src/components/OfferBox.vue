@@ -7,8 +7,15 @@
       <h3 class="offer-title">{{ offer.title }}</h3>
       <p class="offer-text">{{ offer.firstText }}</p>
       <p v-if="offer.secondText" class="offer-text">{{ offer.secondText }}</p>
-      <div v-if="showMoreInfo && offer.moreInfo" v-html="offer.moreInfo"></div>
-      <button @click="showMoreInfo = !showMoreInfo" class="see-more-offer">
+      <div
+        v-if="(showMoreInfo && offer.moreInfo) || !offer.hasShowMoreButton"
+        v-html="offer.moreInfo"
+      ></div>
+      <button
+        v-if="offer.hasShowMoreButton"
+        @click="showMoreInfo = !showMoreInfo"
+        class="see-more-offer"
+      >
         {{ showMoreInfo ? $t("seeLess") : $t("seeMore") }}
       </button>
     </div>
@@ -22,10 +29,6 @@ const props = defineProps({
   offer: {
     type: Object,
     required: true,
-  },
-  rightImage: {
-    type: Boolean,
-    default: false,
   },
 });
 
@@ -153,10 +156,12 @@ const showMoreInfo = ref(false);
 
     .offer-text,
     .in-package,
-    .service-list {
+    .service-list,
+    .offer-more-text {
       font-size: 16px;
       line-height: 20px;
       text-align: center;
+      font-weight: 300;
 
       @media (min-width: $md-screen) {
         font-size: 18px;
@@ -165,6 +170,18 @@ const showMoreInfo = ref(false);
 
       @media (min-width: $xl-screen) {
         text-align: left;
+      }
+    }
+
+    .service-list {
+      text-align: left;
+    }
+
+    .offer-more-text {
+      margin-bottom: 10px;
+
+      &:last-child {
+        margin-bottom: 0;
       }
     }
 
@@ -186,7 +203,7 @@ const showMoreInfo = ref(false);
     font-size: 16px;
     text-transform: uppercase;
     cursor: pointer;
-    font-weight: 600;
+    font-weight: 500;
     text-decoration: none;
     color: #000;
     align-self: center;
