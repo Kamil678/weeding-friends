@@ -46,18 +46,11 @@ import Button from "../components/Button.vue";
 
 <style lang="scss">
 .about-page {
-  // padding: 0 30px 30px 30px;
-
-  // @media (min-width: $lg-screen) {
-  //   padding: 0 50px 100px 50px;
-  // }
-
   .about-us-wrap {
     display: flex;
     flex-direction: column;
     max-width: 500px;
     margin: 0 auto;
-    //margin-top: 1.5rem;
     background-color: transparent;
 
     &.first {
@@ -93,7 +86,7 @@ import Button from "../components/Button.vue";
 
       &.first {
         flex-direction: column-reverse;
-        margin-bottom: 30px;
+        margin-bottom: 50px;
       }
 
       &.second {
@@ -106,7 +99,6 @@ import Button from "../components/Button.vue";
 
         &.first {
           flex-direction: row;
-          //grid-template-columns: 1fr 1fr;
           margin-bottom: 0;
         }
 
@@ -134,6 +126,11 @@ import Button from "../components/Button.vue";
         @media (min-width: $lg-screen) {
           align-items: flex-start;
           padding: 20px 50px 20px 30px;
+          gap: 10px;
+        }
+
+        @media (min-width: $xl-screen) {
+          gap: 20px;
         }
 
         .owner-info {
@@ -162,6 +159,14 @@ import Button from "../components/Button.vue";
           margin-top: 30px;
           text-align: center;
           align-self: center;
+
+          @media (min-width: $lg-screen) {
+            margin-top: 15px;
+          }
+
+          @media (min-width: $xl-screen) {
+            margin-top: 30px;
+          }
         }
       }
     }
