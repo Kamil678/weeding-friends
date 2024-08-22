@@ -45,7 +45,7 @@
             >{{ $t("navGallery") }}</router-link
           >
         </li>
-        <li class="nav-list-element">
+        <!-- <li class="nav-list-element">
           <router-link
             to="/opinions"
             class="nav-list-link"
@@ -53,7 +53,7 @@
             @click="openMenu = false"
             >{{ $t("navOpinions") }}</router-link
           >
-        </li>
+        </li> -->
         <li class="nav-list-element">
           <router-link
             to="/contact"

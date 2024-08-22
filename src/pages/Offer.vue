@@ -9,9 +9,10 @@
 <script setup>
 import OfferBox from "../components/OfferBox.vue";
 import { useI18n } from "vue-i18n";
+import { computed } from "vue";
 
 const { t } = useI18n();
-const offers = [
+const offers = computed(() => [
   {
     id: 1,
     src: new URL("../assets/gallery/image-21.jpg", import.meta.url).href,
@@ -116,7 +117,7 @@ const offers = [
   },
   {
     id: 6,
-    src: new URL("../assets/gallery/image-23.jpg", import.meta.url).href,
+    src: new URL("../assets/gallery/image-22.jpg", import.meta.url).href,
     alt: "The wall behind the bride and groom",
     title: t("offer6Title"),
     firstText: t("offer6FirstText"),
@@ -151,7 +152,7 @@ const offers = [
     rightImage: true,
     hasShowMoreButton: false,
   },
-];
+]);
 </script>
 
 <style lang="scss">
