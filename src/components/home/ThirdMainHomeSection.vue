@@ -8,27 +8,27 @@
   </section>
 </template>
 <script setup>
-import Button from "./Button.vue";
+import Button from "../shared/Button.vue";
 import BasicOfferBox from "./BasicOfferBox.vue";
 
 const offers = [
   {
     id: 1,
-    src: new URL("../assets/basic-offer-1.jpg", import.meta.url).href,
+    src: new URL("../../assets/home/basic-offer-1.jpg", import.meta.url).href,
     alt: "Holding hands with a wedding ring",
     title: "Tekst 1",
     text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
   },
   {
     id: 2,
-    src: new URL("../assets/basic-offer-2.png", import.meta.url).href,
+    src: new URL("../../assets/home/basic-offer-2.png", import.meta.url).href,
     alt: "Bride and groom",
     title: "Tekst 2",
     text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
   },
   {
     id: 2,
-    src: new URL("../assets/basic-offer-3.png", import.meta.url).href,
+    src: new URL("../../assets/home/basic-offer-3.png", import.meta.url).href,
     alt: "Wedding cake",
     title: "Tekst 3",
     text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
@@ -83,3 +83,4 @@ const offers = [
   }
 }
 </style>
+../shared/Button.vue

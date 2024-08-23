@@ -1,45 +1,53 @@
 <template>
-  <header class="hedaer-container">
-    <nav class="main-nav">
-      <a href="/" class="logo-container">
-        Weeding<br />
-        Friends
+  <header class="header">
+    <nav class="header__nav">
+      <a href="/" class="header__logo">
+        <img
+          src="../../assets//shared/logo.png"
+          alt="Wedding friends logo"
+          class="header__logo__image"
+        />
       </a>
-      <ul :class="{ open: openMenu }" class="nav-list-container">
+      <ul
+        :class="{ 'header__nav__list--open': openMenu }"
+        class="header__nav__list"
+      >
         <li>
-          <button @click="openMenu = false" class="close-menu">&times;</button>
+          <button @click="openMenu = false" class="header__nav__close-menu-btn">
+            &times;
+          </button>
         </li>
-        <li class="nav-list-element">
+        <li class="header__nav__list__element">
           <router-link
             to="/"
-            class="nav-list-link"
+            class="header__nav__list__link"
             active-class="active"
             @click="openMenu = false"
             >{{ $t("navHome") }}</router-link
           >
         </li>
-        <li class="nav-list-element">
+        <li class="header__nav__list__element">
           <router-link
             to="/about"
-            class="nav-list-link"
+            class="header__nav__list__link"
             active-class="active"
             @click="openMenu = false"
             >{{ $t("navAboutUs") }}</router-link
           >
         </li>
-        <li class="nav-list-element">
+        <li class="header__nav__list__element">
           <router-link
             to="/offer"
-            class="nav-list-link"
+            class="header__nav__list__link"
             active-class="active"
             @click="openMenu = false"
             >{{ $t("navOffer") }}</router-link
           >
         </li>
-        <li class="nav-list-element">
+        <li class="header__nav__list__element">
           <router-link
             to="/gallery"
-            class="nav-list-link"
+            class="header__nav__list__link"
             active-class="active"
             @click="openMenu = false"
             >{{ $t("navGallery") }}</router-link
@@ -54,24 +62,29 @@
             >{{ $t("navOpinions") }}</router-link
           >
         </li> -->
-        <li class="nav-list-element">
+        <li class="header__nav__list__element">
           <router-link
             to="/contact"
-            class="nav-list-link"
+            class="header__nav__list__link"
             active-class="active"
             @click="openMenu = false"
             >{{ $t("navContact") }}</router-link
           >
         </li>
-        <li class="nav-list-element change-language-element">
-          <button @click="toggleLanguage" class="change-language-btn">
+        <li
+          class="header__nav__list__element header__nav__list__element--change-language-element"
+        >
+          <button
+            @click="toggleLanguage"
+            class="header__nav__list__change-language-btn"
+          >
             {{ changeLanguageText }}
           </button>
         </li>
       </ul>
-      <button @click="openMenu = true" class="hamburger-menu">
+      <button @click="openMenu = true" class="header__nav__mobile-menu-btn">
         <img
-          src="../assets/icon-hamburger.svg"
+          src="../../assets/shared/icon-hamburger.svg"
           alt="Hamburger icon"
           class="hamburegr-image"
         />
@@ -99,16 +112,16 @@ const changeLanguageText = computed(() =>
 </script>
 
 <style lang="scss">
-.hedaer-container {
+.header {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  padding: 1.5rem 2rem;
+  padding: 0 2rem;
   z-index: 9999;
   background-color: #fff;
 
-  .main-nav {
+  &__nav {
     width: 100%;
     max-width: 1400px;
     margin: 0 auto;
@@ -116,16 +129,7 @@ const changeLanguageText = computed(() =>
     align-items: center;
     justify-content: space-between;
 
-    .logo-container {
-      text-decoration: none;
-      text-align: center;
-      font-size: 22px;
-      line-height: 26px;
-      color: #000;
-      font-family: "Caudex", serif;
-    }
-
-    .close-menu {
+    &__close-menu-btn {
       background-color: transparent;
       border: none;
       font-size: 30px;
@@ -138,12 +142,12 @@ const changeLanguageText = computed(() =>
       }
     }
 
-    .nav-list-container {
+    &__list {
       display: none;
       gap: 1.5rem 3rem;
       list-style: none;
 
-      &.open {
+      &--open {
         display: flex;
         background-color: $primary-color;
         flex-direction: column;
@@ -161,7 +165,7 @@ const changeLanguageText = computed(() =>
         display: flex;
       }
 
-      .nav-list-element {
+      &__element {
         position: relative;
         padding: 10px 0;
 
@@ -185,16 +189,7 @@ const changeLanguageText = computed(() =>
           width: 100%;
         }
 
-        .nav-list-link {
-          text-transform: uppercase;
-          text-decoration: none;
-          color: #000;
-          font-size: 1.125rem;
-          line-height: 20px;
-          transition: ease 0.3s;
-        }
-
-        &.change-language-element {
+        &--change-language-element {
           margin-left: 0;
           &:hover::before {
             width: 0;
@@ -203,22 +198,31 @@ const changeLanguageText = computed(() =>
           @media (min-width: $lg-screen) {
             margin-left: 10px;
           }
-
-          .change-language-btn {
-            background-color: transparent;
-            border: none;
-            text-transform: uppercase;
-            font-size: 1.125rem;
-            line-height: 20px;
-            border-left: 2px solid #000;
-            padding-left: 5px;
-            cursor: pointer;
-          }
         }
+      }
+
+      &__change-language-btn {
+        background-color: transparent;
+        border: none;
+        text-transform: uppercase;
+        font-size: 1.125rem;
+        line-height: 20px;
+        border-left: 2px solid #000;
+        padding-left: 5px;
+        cursor: pointer;
+      }
+
+      &__link {
+        text-transform: uppercase;
+        text-decoration: none;
+        color: #000;
+        font-size: 1.125rem;
+        line-height: 20px;
+        transition: ease 0.3s;
       }
     }
 
-    .hamburger-menu {
+    &__mobile-menu-btn {
       display: block;
       background-color: transparent;
       border: none;
@@ -232,6 +236,19 @@ const changeLanguageText = computed(() =>
       @media (min-width: $lg-screen) {
         display: none;
       }
+    }
+  }
+
+  &__logo {
+    text-decoration: none;
+    text-align: center;
+    font-size: 22px;
+    line-height: 26px;
+    color: #000;
+    font-family: "Caudex", serif;
+
+    &__image {
+      width: 94px;
     }
   }
 }

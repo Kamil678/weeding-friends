@@ -1,6 +1,6 @@
 <template>
-  <div class="page page-wrap about-page">
-    <h1 class="page-title">{{ $t("navAboutUs") }}</h1>
+  <div class="page page--with-padding about-page">
+    <h1 class="page__title">{{ $t("navAboutUs") }}</h1>
     <div class="about-us-wrap">
       <div class="about-container first">
         <div class="info-container">
@@ -41,7 +41,7 @@
   </div>
 </template>
 <script setup>
-import Button from "../components/Button.vue";
+import Button from "../components/shared/Button.vue";
 </script>
 
 <style lang="scss">

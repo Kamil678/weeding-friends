@@ -1,13 +1,13 @@
 <template>
   <div class="page offer-page">
-    <h1 class="page-title">{{ $t("navOffer") }}</h1>
-    <div class="all-offers-wrap">
+    <h1 class="page__title">{{ $t("navOffer") }}</h1>
+    <div class="offers">
       <OfferBox v-for="(offer, index) in offers" :key="index" :offer="offer" />
     </div>
   </div>
 </template>
 <script setup>
-import OfferBox from "../components/OfferBox.vue";
+import OfferBox from "../components/offer/OfferBox.vue";
 import { useI18n } from "vue-i18n";
 import { computed } from "vue";
 
@@ -21,8 +21,10 @@ const offers = computed(() => [
     firstText: t("offer1FirstText"),
     secondText: t("offer1SecondText"),
     moreInfo: `
-    <p class="in-package">${t("inPackage")}:</p>
-    <ul class="service-list">
+    <p class="offer__info__text offer__info__text--in-package">${t(
+      "inPackage"
+    )}:</p>
+    <ul class="offer__info__text offer__info__text--service-list">
       <li>${t("offer1PackegeItem1")}</li>
       <li>${t("offer1PackegeItem2")}</li>
       <li>${t("offer1PackegeItem3")}</li>
@@ -51,8 +53,10 @@ const offers = computed(() => [
     firstText: t("offer2FirstText"),
     secondText: t("offer2SecondText"),
     moreInfo: `
-    <p class="in-package">${t("inPackage")}:</p>
-    <ul class="service-list">
+    <p class="offer__info__text offer__info__text--in-package">${t(
+      "inPackage"
+    )}:</p>
+    <ul class="offer__info__text offer__info__text--service-list">
       <li>${t("offer2PackegeItem1")}</li>
       <li>${t("offer2PackegeItem2")}</li>
       <li>${t("offer2PackegeItem3")}</li>
@@ -72,8 +76,10 @@ const offers = computed(() => [
     firstText: t("offer3FirstText"),
     secondText: t("offer3SecondText"),
     moreInfo: `
-    <p class="in-package">${t("inPackage")}:</p>
-    <ul class="service-list">
+    <p class="offer__info__text offer__info__text--in-package">${t(
+      "inPackage"
+    )}:</p>
+    <ul class="offer__info__text offer__info__text--offer__info__text offer__info__text--service-list">
       <li>${t("offer3PackegeItem1")}</li>
       <li>${t("offer3PackegeItem2")}</li>
       <li>${t("offer3PackegeItem3")}</li>
@@ -96,8 +102,12 @@ const offers = computed(() => [
     title: t("offer4Title"),
     firstText: t("offer4FirstText"),
     moreInfo: `
-    <p class="offer-more-text">${t("offer4AdditionalText1")}</p>
-    <p class="offer-more-text">${t("offer4AdditionalText2")}</p>
+    <p class="offer__info__text offer__info__text--more-text">${t(
+      "offer4AdditionalText1"
+    )}</p>
+    <p class="offer__info__text offer__info__text--more-text">${t(
+      "offer4AdditionalText2"
+    )}</p>
     `,
     rightImage: true,
     hasShowMoreButton: false,
@@ -109,8 +119,12 @@ const offers = computed(() => [
     title: t("offer5Title"),
     firstText: t("offer5FirstText"),
     moreInfo: `
-    <p class="offer-more-text">${t("offer5AdditionalText1")}</p>
-    <p class="offer-more-text">${t("offer5AdditionalText2")}</p>
+    <p class="offer__info__text offer__info__text--more-text">${t(
+      "offer5AdditionalText1"
+    )}</p>
+    <p class="offer__info__text offer__info__text--more-text">${t(
+      "offer5AdditionalText2"
+    )}</p>
     `,
     rightImage: false,
     hasShowMoreButton: false,
@@ -122,9 +136,15 @@ const offers = computed(() => [
     title: t("offer6Title"),
     firstText: t("offer6FirstText"),
     moreInfo: `
-    <p class="offer-more-text">${t("offer6AdditionalText1")}</p>
-    <p class="offer-more-text">${t("offer6AdditionalText2")}</p>
-    <p class="offer-more-text">${t("offer6AdditionalText3")}</p>
+    <p class="offer__info__text offer__info__text--more-text">${t(
+      "offer6AdditionalText1"
+    )}</p>
+    <p class="offer__info__text offer__info__text--more-text">${t(
+      "offer6AdditionalText2"
+    )}</p>
+    <p class="offer__info__text offer__info__text--more-text">${t(
+      "offer6AdditionalText3"
+    )}</p>
     `,
     rightImage: true,
     hasShowMoreButton: true,
@@ -137,8 +157,12 @@ const offers = computed(() => [
     firstText: t("offer7FirstText"),
     secondText: t("offer7SecondText"),
     moreInfo: `
-    <p class="offer-more-text">${t("offer7AdditionalText1")}</p>
-    <p class="offer-more-text">${t("offer7AdditionalText2")}</p>
+    <p class="offer__info__text offer__info__text--more-text">${t(
+      "offer7AdditionalText1"
+    )}</p>
+    <p class="offer__info__text offer__info__text--more-text">${t(
+      "offer7AdditionalText2"
+    )}</p>
     `,
     rightImage: false,
     hasShowMoreButton: false,
@@ -174,7 +198,7 @@ const offers = computed(() => [
     padding-right: 100px;
   }
 
-  .all-offers-wrap {
+  .offers {
     display: flex;
     flex-direction: column;
     align-items: center;
