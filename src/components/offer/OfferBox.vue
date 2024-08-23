@@ -1,12 +1,18 @@
 <template>
-  <div class="offer-container" :class="offer.rightImage ? 'image-right' : ''">
-    <div class="offer-image">
-      <img :src="offer.src" :alt="offer.alt" />
+  <div class="offer" :class="{ 'offer--image-right': offer.rightImage }">
+    <div class="offer__image-container">
+      <img
+        :src="offer.src"
+        :alt="offer.alt"
+        class="offer__image-container__image"
+      />
     </div>
-    <div class="offer-info">
-      <h3 class="offer-title">{{ offer.title }}</h3>
-      <p class="offer-text">{{ offer.firstText }}</p>
-      <p v-if="offer.secondText" class="offer-text">{{ offer.secondText }}</p>
+    <div class="offer__info">
+      <h3 class="offer__info__title">{{ offer.title }}</h3>
+      <p class="offer__info__text">{{ offer.firstText }}</p>
+      <p v-if="offer.secondText" class="offer__info__text">
+        {{ offer.secondText }}
+      </p>
       <div
         v-if="(showMoreInfo && offer.moreInfo) || !offer.hasShowMoreButton"
         v-html="offer.moreInfo"
@@ -14,7 +20,7 @@
       <button
         v-if="offer.hasShowMoreButton"
         @click="showMoreInfo = !showMoreInfo"
-        class="see-more-offer"
+        class="offer__info__see-more-btn"
       >
         {{ showMoreInfo ? $t("seeLess") : $t("seeMore") }}
       </button>
@@ -22,7 +28,7 @@
   </div>
 </template>
 <script setup>
-import Button from "./Button.vue";
+import Button from "../shared/Button.vue";
 import { defineProps, ref } from "vue";
 
 const props = defineProps({
@@ -36,7 +42,7 @@ const showMoreInfo = ref(false);
 </script>
 
 <style lang="scss">
-.offer-container {
+.offer {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -47,12 +53,12 @@ const showMoreInfo = ref(false);
     align-items: flex-start;
   }
 
-  &.image-right {
+  &--image-right {
     @media (min-width: $xl-screen) {
       flex-direction: row-reverse;
     }
 
-    .offer-image {
+    .offer__image-container {
       &::before {
         top: 20px;
         left: 20px;
@@ -64,7 +70,7 @@ const showMoreInfo = ref(false);
       }
     }
 
-    .offer-info {
+    .offer__info {
       margin-right: 0;
       margin-left: 0;
 
@@ -74,7 +80,7 @@ const showMoreInfo = ref(false);
     }
   }
 
-  .offer-image {
+  &__image-container {
     position: relative;
     display: inline-block;
 
@@ -94,7 +100,7 @@ const showMoreInfo = ref(false);
       }
     }
 
-    img {
+    &__image {
       display: block;
       position: relative;
       z-index: 1;
@@ -115,7 +121,7 @@ const showMoreInfo = ref(false);
     }
   }
 
-  .offer-info {
+  &__info {
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -134,7 +140,7 @@ const showMoreInfo = ref(false);
       gap: 20px;
     }
 
-    .offer-title {
+    &__title {
       margin-bottom: 10px;
       font-size: 24px;
       line-height: 28px;
@@ -154,10 +160,7 @@ const showMoreInfo = ref(false);
       }
     }
 
-    .offer-text,
-    .in-package,
-    .service-list,
-    .offer-more-text {
+    &__text {
       font-size: 16px;
       line-height: 20px;
       text-align: center;
@@ -171,43 +174,40 @@ const showMoreInfo = ref(false);
       @media (min-width: $xl-screen) {
         text-align: left;
       }
-    }
 
-    .service-list {
-      text-align: left;
-    }
+      &--in-package {
+        font-weight: 500;
+      }
 
-    .offer-more-text {
-      margin-bottom: 10px;
+      &--service-list {
+        text-align: left;
+        margin: 10px 0 0 30px;
+      }
 
-      &:last-child {
-        margin-bottom: 0;
+      &--more-text {
+        margin-bottom: 10px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
       }
     }
 
-    .in-package {
+    &__see-more-btn {
+      border: none;
+      background-color: $primary-color;
+      width: fit-content;
+      padding: 15px 30px;
+      border-radius: 10px;
+      font-size: 16px;
+      text-transform: uppercase;
+      cursor: pointer;
       font-weight: 500;
+      text-decoration: none;
+      color: #000;
+      align-self: center;
+      margin-top: 10px;
     }
-
-    .service-list {
-      margin: 10px 0 0 30px;
-    }
-  }
-
-  .see-more-offer {
-    border: none;
-    background-color: $primary-color;
-    width: fit-content;
-    padding: 15px 30px;
-    border-radius: 10px;
-    font-size: 16px;
-    text-transform: uppercase;
-    cursor: pointer;
-    font-weight: 500;
-    text-decoration: none;
-    color: #000;
-    align-self: center;
-    margin-top: 10px;
   }
 }
 </style>

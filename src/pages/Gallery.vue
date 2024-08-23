@@ -1,8 +1,8 @@
 <template>
-  <div class="page page-wrap gallery-wrap">
-    <h1 class="page-title">{{ $t("galleryText") }}</h1>
-    <div class="gallery-container">
-      <div v-for="(image, index) in images" :key="index" class="gallery-item">
+  <div class="page page--with-padding gallery-wrap">
+    <h1 class="page__title">{{ $t("galleryText") }}</h1>
+    <div class="gallery">
+      <div v-for="(image, index) in images" :key="index" class="gallery__item">
         <img :src="image.src" :alt="image.alt" />
       </div>
     </div>
@@ -199,31 +199,28 @@ const images = [
 </script>
 
 <style lang="scss">
-.gallery-wrap {
-  .gallery-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    grid-gap: 20px;
-    width: 100%;
-    box-sizing: border-box;
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 20px;
+  width: 100%;
+  box-sizing: border-box;
 
-    @media (min-width: $sm-screen) {
-      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    }
+  @media (min-width: $sm-screen) {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
 
-    @media (min-width: $xl-screen) {
-      grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-    }
+  @media (min-width: $xl-screen) {
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  }
 
-    .gallery-item {
-      overflow: hidden;
-      //height: 500px;
+  &__item {
+    overflow: hidden;
 
-      img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-      }
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
     }
   }
 }

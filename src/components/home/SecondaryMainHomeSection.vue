@@ -8,7 +8,7 @@
     <div class="basic-info">
       <div class="first-image owner-image">
         <img
-          src="../assets/first-image-second-main-section.jpg"
+          src="../../assets/home/first-image-second-main-section.jpg"
           alt="First image owners weeding friends"
         />
       </div>
@@ -34,7 +34,7 @@
       </div>
       <div class="second-image owner-image">
         <img
-          src="../assets/second-image-second-main-section.jpg"
+          src="../../assets/home/second-image-second-main-section.jpg"
           alt="Second image owners weeding friends"
         />
       </div>
@@ -42,7 +42,7 @@
   </section>
 </template>
 <script setup>
-import Button from "./Button.vue";
+import Button from "../shared/Button.vue";
 </script>
 
 <style lang="scss">
@@ -186,3 +186,4 @@ import Button from "./Button.vue";
   }
 }
 </style>
+../shared/Button.vue
