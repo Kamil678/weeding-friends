@@ -15,8 +15,8 @@ const { t } = useI18n();
 const offers = computed(() => [
   {
     id: 1,
-    src: new URL("../assets/gallery/image-21.jpg", import.meta.url).href,
-    alt: "The wall behind the bride and groom",
+    src: new URL("../assets/gallery/image-25.jpg", import.meta.url).href,
+    alt: "The groom gives the bride's hand ",
     title: t("offer1Title"),
     firstText: t("offer1FirstText"),
     secondText: t("offer1SecondText"),
@@ -70,8 +70,8 @@ const offers = computed(() => [
   },
   {
     id: 3,
-    src: new URL("../assets/gallery/image-24.jpg", import.meta.url).href,
-    alt: "The wall behind the bride and groom",
+    src: new URL("../assets/gallery/image-16.jpg", import.meta.url).href,
+    alt: "Groom holding bride's dress",
     title: t("offer3Title"),
     firstText: t("offer3FirstText"),
     secondText: t("offer3SecondText"),
@@ -114,7 +114,7 @@ const offers = computed(() => [
   },
   {
     id: 5,
-    src: new URL("../assets/gallery/image-22.jpg", import.meta.url).href,
+    src: new URL("../assets/gallery/image-38.jpg", import.meta.url).href,
     alt: "The wall behind the bride and groom",
     title: t("offer5Title"),
     firstText: t("offer5FirstText"),
@@ -131,7 +131,7 @@ const offers = computed(() => [
   },
   {
     id: 6,
-    src: new URL("../assets/gallery/image-22.jpg", import.meta.url).href,
+    src: new URL("../assets/gallery/image-38.jpg", import.meta.url).href,
     alt: "The wall behind the bride and groom",
     title: t("offer6Title"),
     firstText: t("offer6FirstText"),
@@ -169,8 +169,8 @@ const offers = computed(() => [
   },
   {
     id: 8,
-    src: new URL("../assets/gallery/image-22.jpg", import.meta.url).href,
-    alt: "The wall behind the bride and groom",
+    src: new URL("../assets/offer/consultations.jpg", import.meta.url).href,
+    alt: "Owners with laptops",
     title: t("offer8Title"),
     firstText: t("offer8FirstText"),
     rightImage: true,

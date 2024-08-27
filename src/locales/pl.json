@@ -36,6 +36,9 @@
   "owner2FourthInfo": "Jestem odpowiedzialna i wierzę, że już po pierwszej rozmowie sami poczujecie, że jesteście w dobrych rękach. Nie będziecie musieli martwić się organizacją i logistyką. Będę czuwać nad najdrobniejszymi szczegółami, abyście mogli skupić się na tym, co najważniejsze: na świętowaniu i czerpaniu radości z wyjątkowych chwil!",
   "owner2FifthInfo": "Swoje liczne pomysły potrafię urzeczywistnić i poukładać jak wymagające puzzle… zupełnie jak burzę loków na mojej głowie.",
   "owner2SixthInfo": "Wybierając mnie, jako przewodniczkę w organizacji Waszej uroczystości, już na starcie eliminujecie ryzyko problemów, czerpiecie z mojego doświadczenia i świadomie decydujecie, jak będzie wyglądał TEN DZIEŃ.",
+  "basicOfferFirstText": "Pragniecie, aby Wasz ślub był perfekcyjny i bezstresowy? Zaufajcie naszej kompleksowej obsłudze – zajmiemy się wszystkimi szczegółami, umożliwiając Wam w pełni cieszenie się tym wyjątkowym dniem.",
+  "basicOfferSecondText": "Marzycie o wymarzonym ślubie, ale codzienne obowiązki pochłaniają Wasz czas? Skorzystajcie z naszej częściowej organizacji – przejmiemy część przygotowań, abyście mogli w pełni cieszyć się nadchodzącym dniem.",
+  "basicOfferThirdText": "W Wedding Friends zajmiemy się  koordynacją Dnia Ślubu, abyście mogli w pełni cieszyć się każdą chwilą, mając pewność, że wszystko jest w rękach profesjonalistów. Oferujemy pomoc w nagłych sytuacjach oraz organizujemy magiczne śluby w plenerze i osobiste śluby humanistyczne. Dodatkowo, zorganizujemy niezapomniane imprezy okolicznościowe. ",
   "offer1Title": "Pełna organizacja dnia ślubu i przyjęcia weselnego",
   "offer1FirstText": "Pełna organizacja ślubu, to oferta dla Par, które planowanie ślubu pragną w całości powierzyć specjalistkom. Pozwoli to, cieszyć się dniem ślubu, bez stresu związanego z jego organizacją. To najlepsza opcja dla zapracowanych zakochanych.",
   "offer1SecondText": "Profesjonalna opieka Wedding Pleannerek, sprawi, że wszystkie formalności ślubne będą załatwione, a Wasze codzienne życie i przede wszystkim związek na tym nie ucierpi.",
@@ -96,5 +99,7 @@
   "offer7AdditionalText1": "Z wielką przyjemnością zorganizujemy dla Was wieczór panieński lub kawalerski, mamy też specjalny program na baby shower. Jubileusz, chrzciny czy Komunia Święta, to szczególne momenty, które zapamiętuje się na wiele lat.",
   "offer7AdditionalText2": "Teraz nie musisz martwić się o ich organizację. Zostaw ją Nam, zadzwoń i dowiedz się więcej przy wspólnej kawie.",
   "offer8Title": "Konsultacje online / stacjonarnie",
-  "offer8FirstText": "Temat konsultacji zawsze zależy od potrzeb klientów. Udzielimy profesjonalnych wskazówek do rozwiązania problematycznych sytuacji. Odpowiemy na nurtujące Was pytania, związane z przygotowaniem do Waszej uroczystości, tak, aby przebiegła ona w sposób zaplanowany i jak najmniej stresujący."
+  "offer8FirstText": "Temat konsultacji zawsze zależy od potrzeb klientów. Udzielimy profesjonalnych wskazówek do rozwiązania problematycznych sytuacji. Odpowiemy na nurtujące Was pytania, związane z przygotowaniem do Waszej uroczystości, tak, aby przebiegła ona w sposób zaplanowany i jak najmniej stresujący.",
+  "email": "E-mail",
+  "phone": "Telefon"
 }

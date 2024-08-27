@@ -10,6 +10,9 @@
 <script setup>
 import Button from "../shared/Button.vue";
 import BasicOfferBox from "./BasicOfferBox.vue";
+import { useI18n } from "vue-i18n";
+
+const { t } = useI18n();
 
 const offers = [
   {
@@ -17,21 +20,21 @@ const offers = [
     src: new URL("../../assets/home/basic-offer-1.jpg", import.meta.url).href,
     alt: "Holding hands with a wedding ring",
     title: "Tekst 1",
-    text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    text: t("basicOfferFirstText"),
   },
   {
     id: 2,
     src: new URL("../../assets/home/basic-offer-2.png", import.meta.url).href,
     alt: "Bride and groom",
     title: "Tekst 2",
-    text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    text: t("basicOfferSecondText"),
   },
   {
     id: 2,
     src: new URL("../../assets/home/basic-offer-3.png", import.meta.url).href,
     alt: "Wedding cake",
     title: "Tekst 3",
-    text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    text: t("basicOfferThirdText"),
   },
 ];
 </script>
@@ -71,10 +74,12 @@ const offers = [
     justify-content: center;
     gap: 50px;
     margin: 50px 0;
+    max-width: 1400px;
 
     @media (min-width: $xl-screen) {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
     }
   }
 
@@ -83,4 +88,3 @@ const offers = [
   }
 }
 </style>
-../shared/Button.vue
