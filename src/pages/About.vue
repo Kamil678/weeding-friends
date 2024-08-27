@@ -12,11 +12,11 @@
           <p class="info">{{ $t("owner1FifthInfo") }}</p>
           <p class="info">{{ $t("owner1SixthInfo") }}</p>
           <p class="info">{{ $t("owner1SeventhInfo") }}</p>
-          <Button
-            :text="$t('contactMe')"
-            href="/contact"
-            class="contact-me-btn"
-          />
+          <a
+            href="mailto:kontakt.weddingfriends@gmail.com"
+            class="btn contact-me-btn"
+            >{{ $t("contactMe") }}</a
+          >
         </div>
         <img src="../assets/about/owner-1.jpg" alt="Photo showing Ewelina" />
       </div>
@@ -30,11 +30,11 @@
           <p class="info">{{ $t("owner2FourthInfo") }}</p>
           <p class="info">{{ $t("owner2FifthInfo") }}</p>
           <p class="info">{{ $t("owner2SixthInfo") }}</p>
-          <Button
-            :text="$t('contactMe')"
-            href="/contact"
-            class="contact-me-btn"
-          />
+          <a
+            href="mailto:kontakt.weddingfriends@gmail.com"
+            class="btn contact-me-btn"
+            >{{ $t("contactMe") }}</a
+          >
         </div>
       </div>
     </div>

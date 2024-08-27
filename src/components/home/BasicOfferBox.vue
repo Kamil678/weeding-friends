@@ -23,13 +23,14 @@ const props = defineProps({
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  width: 100%;
   gap: 30px;
 
   img {
     width: 180px;
     border-radius: 50%;
     border: 3px solid $primary-color;
+    text-align: center;
 
     @media (min-width: $sm-screen) {
       width: 230px;
@@ -39,17 +40,23 @@ const props = defineProps({
       width: 300px;
     }
   }
+  .basic-ofer-info-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
 
-  .title,
-  .text {
-    text-align: center;
-  }
+    .title,
+    .text {
+      text-align: center;
+    }
 
-  .title {
-    font-size: 26px;
-    line-height: 30px;
-    margin-bottom: 20px;
-    font-family: "Caudex", serif;
+    .title {
+      font-size: 26px;
+      line-height: 30px;
+      //margin-bottom: 20px;
+      font-family: "Caudex", serif;
+    }
   }
 }
 </style>

@@ -52,7 +52,7 @@ body {
 .quote {
   display: none;
   position: absolute;
-  font-family: "Caudex", serif;
+  font-family: "Caveat Brush", serif;
   bottom: 10%;
   left: 50%;
   transform: translateX(-50%);
@@ -81,5 +81,26 @@ body {
     @media (min-width: $lg-screen) {
       display: none;
     }
+  }
+}
+
+.btn {
+  border: none;
+  background-color: $primary-color;
+  width: fit-content;
+  padding: 10px 25px;
+  border-radius: 10px;
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-weight: 500;
+  text-decoration: none;
+  color: #000;
+
+  @media (min-width: $md-screen) {
+    font-size: 16px;
+    line-height: 18px;
+    padding: 15px 30px;
   }
 }

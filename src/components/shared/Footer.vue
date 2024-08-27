@@ -6,17 +6,21 @@
         <div class="contact-data-container">
           <div class="data">
             <i class="fa-regular fa-envelope data-icon"></i>
-            <a href="mailto:przykładowymail@gmail.com" class="data-link"
-              >przykładowymail@gmail.com</a
+            <a href="mailto:kontakt.weddingfriends@gmail.com" class="data-link"
+              >kontakt.weddingfriends@gmail.com</a
             >
           </div>
           <div class="data">
             <i class="fa-solid fa-phone data-icon"></i>
-            <a href="tel:+48111111111" class="data-link"> +48111111111 </a>
+            <a href="tel:+48603612175" class="data-link">Magda: 603612175</a>
+          </div>
+          <div class="data">
+            <i class="fa-solid fa-phone data-icon"></i>
+            <a href="tel:+48663316266" class="data-link">Ewelina: 663316266</a>
           </div>
           <div class="data">
             <i class="fa-solid fa-location-dot data-icon"></i>
-            <p class="static-data">ul. Szklana 23, 32-200 Miechów</p>
+            <p class="static-data">32-200 Miechów ul. Partyzantów 59</p>
           </div>
           <div class="data">
             <i class="fa-solid fa-lock data-icon"></i>
@@ -40,12 +44,12 @@
           <a href="#" class="item">
             <i class="fa-brands fa-instagram"></i>
           </a>
-          <a href="#" class="item">
+          <!-- <a href="#" class="item">
             <i class="fa-brands fa-pinterest"></i>
           </a>
           <a href="#" class="item">
             <i class="fa-brands fa-twitter"></i>
-          </a>
+          </a> -->
         </div>
       </div>
     </div>
@@ -80,10 +84,10 @@
     .image-container {
       img {
         border-radius: 20px;
-        width: 250px;
+        width: 200px;
 
         @media (min-width: $md-screen) {
-          width: 300px;
+          width: 250px;
         }
       }
     }
@@ -95,21 +99,21 @@
       width: fit-content;
 
       .contact-title {
-        font-size: 22px;
-        line-height: 26px;
+        font-size: 20px;
+        line-height: 24px;
         font-weight: 400;
         text-transform: uppercase;
         margin-bottom: 20px;
         text-align: left;
 
         @media (min-width: $md-screen) {
-          font-size: 26px;
-          line-height: 30px;
+          font-size: 20px;
+          line-height: 24px;
         }
 
         @media (min-width: $lg-screen) {
-          font-size: 30px;
-          line-height: 34px;
+          font-size: 24px;
+          line-height: 28px;
         }
       }
 
@@ -130,8 +134,8 @@
             width: 20px;
 
             @media (min-width: $md-screen) {
-              font-size: 25px;
-              width: 25px;
+              font-size: 23px;
+              width: 23px;
             }
           }
 
@@ -145,11 +149,6 @@
           .static-data {
             font-size: 14px;
             line-height: 16px;
-
-            @media (min-width: $md-screen) {
-              font-size: 16px;
-              line-height: 18px;
-            }
           }
         }
       }
@@ -179,14 +178,6 @@
 
           .fa-brands {
             font-size: 35px;
-
-            @media (min-width: $md-screen) {
-              font-size: 40px;
-            }
-
-            @media (min-width: $lg-screen) {
-              font-size: 45px;
-            }
           }
         }
       }
