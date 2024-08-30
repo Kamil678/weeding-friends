@@ -195,6 +195,26 @@ const images = [
     src: new URL("../assets/gallery/image-37.jpg", import.meta.url).href,
     alt: "",
   },
+  {
+    id: 38,
+    src: new URL("../assets/gallery/image-38.jpg", import.meta.url).href,
+    alt: "",
+  },
+  {
+    id: 39,
+    src: new URL("../assets/gallery/image-39.jpg", import.meta.url).href,
+    alt: "",
+  },
+  {
+    id: 40,
+    src: new URL("../assets/gallery/image-40.jpg", import.meta.url).href,
+    alt: "",
+  },
+  {
+    id: 41,
+    src: new URL("../assets/gallery/image-41.jpg", import.meta.url).href,
+    alt: "",
+  },
 ];
 </script>
 
