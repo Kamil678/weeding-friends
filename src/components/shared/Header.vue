@@ -1,13 +1,13 @@
 <template>
   <header class="header">
     <nav class="header__nav">
-      <a href="/" class="header__logo">
+      <router-link to="/" class="header__logo">
         <img
           src="../../assets//shared/logo.png"
           alt="Wedding friends logo"
           class="header__logo__image"
         />
-      </a>
+      </router-link>
       <ul
         :class="{ 'header__nav__list--open': openMenu }"
         class="header__nav__list"
@@ -104,6 +104,7 @@ const toggleLanguage = () => {
   const newLanguage = locale.value === "en" ? "pl" : "en";
   locale.value = newLanguage;
   localStorage.setItem("language", newLanguage);
+  openMenu.value = false;
 };
 
 const changeLanguageText = computed(() =>
