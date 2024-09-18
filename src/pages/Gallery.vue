@@ -1,6 +1,5 @@
 <template>
-  <div class="page page--with-padding gallery-wrap">
-    <h1 class="page__title">{{ $t("galleryText") }}</h1>
+  <div class="page page--with-padding page--gallery">
     <div class="gallery">
       <div v-for="(image, index) in images" :key="index" class="gallery__item">
         <img :src="image.src" :alt="image.alt" />

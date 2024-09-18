@@ -15,7 +15,7 @@ const { t } = useI18n();
 const offers = computed(() => [
   {
     id: 1,
-    src: new URL("../assets/gallery/image-25.jpg", import.meta.url).href,
+    src: new URL("../assets/gallery/image-42.jpg", import.meta.url).href,
     alt: "The groom gives the bride's hand ",
     title: t("offer1Title"),
     firstText: t("offer1FirstText"),
@@ -47,7 +47,7 @@ const offers = computed(() => [
   },
   {
     id: 2,
-    src: new URL("../assets/gallery/image-20.jpg", import.meta.url).href,
+    src: new URL("../assets/gallery/image-43.jpg", import.meta.url).href,
     alt: "Guest list board",
     title: t("offer2Title"),
     firstText: t("offer2FirstText"),
@@ -97,7 +97,7 @@ const offers = computed(() => [
   },
   {
     id: 4,
-    src: new URL("../assets/gallery/image-22.jpg", import.meta.url).href,
+    src: new URL("../assets/gallery/image-45.jpg", import.meta.url).href,
     alt: "The wall behind the bride and groom",
     title: t("offer4Title"),
     firstText: t("offer4FirstText"),
