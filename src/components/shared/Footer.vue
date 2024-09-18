@@ -55,7 +55,7 @@
     </div>
     <div class="copyright-container">
       <p class="copyright">
-        Copyright 2024 &copy; Ewelina Komenda & Magdalena Durbacz - Weeding
+        Copyright 2024 &copy; Ewelina Komenda & Magdalena Durbacz - Wedding
         Friends
       </p>
       <p class="website-author">Website created by Kamil Pigulak</p>

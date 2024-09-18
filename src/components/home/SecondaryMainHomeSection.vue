@@ -80,7 +80,8 @@ import Button from "../shared/Button.vue";
 
     .name {
       text-transform: uppercase;
-      color: $primary-color;
+      font-weight: 800;
+      //color: $primary-color;
     }
   }
 
@@ -128,15 +129,6 @@ import Button from "../shared/Button.vue";
 
       p {
         span {
-          font-weight: 500;
-
-          &.other-font {
-            font-family: "Caudex", serif;
-            font-weight: 600;
-            font-size: 18px;
-            color: $primary-color;
-          }
-
           &.italic {
             font-weight: 300;
             font-style: italic;
@@ -144,8 +136,7 @@ import Button from "../shared/Button.vue";
 
           &.name {
             text-transform: uppercase;
-            color: $primary-color;
-            font-size: 18px;
+            font-weight: 600;
           }
         }
       }

@@ -19,6 +19,10 @@ body {
     }
   }
 
+  &--gallery {
+    margin-top: 150px;
+  }
+
   &__title {
     font-family: "Caudex", serif;
     font-size: 50px;
@@ -46,9 +50,6 @@ body {
   }
 }
 
-.page-wrap {
-}
-
 .quote {
   display: none;
   position: absolute;
@@ -59,6 +60,8 @@ body {
   text-align: center;
   font-size: 50px;
   color: #fff;
+  width: 100%;
+  padding: 0 30px;
 
   @media (min-width: $lg-screen) {
     display: block;
