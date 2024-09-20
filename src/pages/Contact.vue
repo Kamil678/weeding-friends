@@ -1,6 +1,6 @@
 <template>
-  <div class="page page--with-padding">
-    <h1 class="page__title">{{ $t("navContact") }}</h1>
+  <div class="page">
+    <div class="contact-image"></div>
     <div class="contact-boxes">
       <ContactBox
         v-for="(contact, index) in contactData"
@@ -58,15 +58,35 @@ const contactData = [
 </script>
 
 <style lang="scss">
+.contact-image {
+  background-image: url(../assets/contact/contact.jpg);
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 70vh;
+  overflow: hidden;
+}
 .contact-boxes {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 30px;
+  padding: 0 30px 30px 30px;
+  margin-top: 50px;
+
+  @media (min-width: $sm-screen) {
+    padding: 0 50px 60px 50px;
+  }
 }
 
 .map {
   margin-top: 50px;
   width: 100%;
+  padding: 0 30px 30px 30px;
+
+  @media (min-width: $sm-screen) {
+    padding: 0 50px 60px 50px;
+  }
 
   &__frame {
     width: 100%;
