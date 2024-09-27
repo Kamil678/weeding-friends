@@ -59,9 +59,10 @@ import Button from "../shared/Button.vue";
   }
 
   .basic-info-title {
-    font-family: "Caudex", serif;
+    font-family: "EB Garamond", serif;
     font-size: 50px;
     line-height: 56px;
+    font-weight: 600;
     text-align: center;
     margin-bottom: 3.125rem;
     font-size: 30px;
@@ -116,7 +117,7 @@ import Button from "../shared/Button.vue";
       gap: 30px;
       padding: 50px;
       text-align: center;
-      font-weight: 300;
+      font-weight: 400;
       line-height: 20px;
 
       @media (min-width: $xxl-screen) {
@@ -130,7 +131,7 @@ import Button from "../shared/Button.vue";
       p {
         span {
           &.italic {
-            font-weight: 300;
+            font-weight: 400;
             font-style: italic;
           }
 

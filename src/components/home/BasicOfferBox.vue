@@ -2,7 +2,6 @@
   <div class="basic-offer-container">
     <img :src="offer.src" :alt="offer.alt" />
     <div class="basic-ofer-info-container">
-      <h3 class="title">{{ offer.title }}</h3>
       <p class="text">{{ offer.text }}</p>
     </div>
   </div>
@@ -49,13 +48,7 @@ const props = defineProps({
     .title,
     .text {
       text-align: center;
-    }
-
-    .title {
-      font-size: 26px;
-      line-height: 30px;
-      //margin-bottom: 20px;
-      font-family: "Caudex", serif;
+      font-weight: 400;
     }
   }
 }

@@ -101,7 +101,7 @@
       .contact-title {
         font-size: 20px;
         line-height: 24px;
-        font-weight: 400;
+        font-weight: 500;
         text-transform: uppercase;
         margin-bottom: 20px;
         text-align: left;
@@ -143,6 +143,7 @@
             text-decoration: none;
             color: #000;
             cursor: pointer;
+            font-weight: 400;
           }
 
           .data-link,

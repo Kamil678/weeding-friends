@@ -15,6 +15,9 @@
         :index="index"
         :direction="direction"
       />
+      <h1 class="quote">
+        {{ $t("quote") }}
+      </h1>
       <CarouselControls
         v-if="controls"
         @prevImage="clickPrevImage"
