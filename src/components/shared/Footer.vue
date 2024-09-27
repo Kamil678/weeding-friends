@@ -1,74 +1,94 @@
 <template>
-  <footer class="footer-container">
-    <div class="contact-container">
-      <div class="main-contact-container">
-        <h4 class="contact-title">{{ $t("contactDetails") }}</h4>
-        <div class="contact-data-container">
-          <div class="data">
-            <i class="fa-regular fa-envelope data-icon"></i>
-            <a href="mailto:kontakt.weddingfriends@gmail.com" class="data-link"
+  <footer class="footer">
+    <div class="footer__contact-container">
+      <div class="footer__contact-container__info">
+        <h4 class="footer__contact-container__title">
+          {{ $t("contactDetails") }}
+        </h4>
+        <div class="footer__contact-container__info__data-container">
+          <div class="footer__contact-container__info__data-container__data">
+            <i
+              class="fa-regular fa-envelope footer__contact-container__info__data-container__data__icon"
+            ></i>
+            <a
+              href="mailto:kontakt.weddingfriends@gmail.com"
+              class="footer__contact-container__info__data-container__data__link"
               >kontakt.weddingfriends@gmail.com</a
             >
           </div>
-          <div class="data">
-            <i class="fa-solid fa-phone data-icon"></i>
-            <a href="tel:+48603612175" class="data-link">Magda: 603612175</a>
+          <div class="footer__contact-container__info__data-container__data">
+            <i
+              class="fa-solid fa-phone footer__contact-container__info__data-container__data__icon"
+            ></i>
+            <a
+              href="tel:+48603612175"
+              class="footer__contact-container__info__data-container__data__link"
+              >Magda: 603612175</a
+            >
           </div>
-          <div class="data">
-            <i class="fa-solid fa-phone data-icon"></i>
-            <a href="tel:+48663316266" class="data-link">Ewelina: 663316266</a>
+          <div class="footer__contact-container__info__data-container__data">
+            <i
+              class="fa-solid fa-phone footer__contact-container__info__data-container__data__icon"
+            ></i>
+            <a
+              href="tel:+48663316266"
+              class="footer__contact-container__info__data-container__data__link"
+              >Ewelina: 663316266</a
+            >
           </div>
-          <div class="data">
-            <i class="fa-solid fa-location-dot data-icon"></i>
-            <p class="static-data">32-200 Miechów ul. Partyzantów 59</p>
-          </div>
-          <div class="data">
-            <i class="fa-solid fa-lock data-icon"></i>
-            <a href="#" class="data-link">{{ $t("privacyPolicy") }}</a>
+          <div class="footer__contact-container__info__data-container__data">
+            <i
+              class="fa-solid fa-location-dot footer__contact-container__info__data-container__data__icon"
+            ></i>
+            <p
+              class="footer__contact-container__info__data-container__data__static"
+            >
+              32-200 Miechów ul. Partyzantów 59
+            </p>
           </div>
         </div>
       </div>
-      <div class="image-container">
+      <div class="footer__contact-container__image">
         <img
           src="../../assets/shared/footer-image.jpg"
           alt="Photo of the owners of Wedding Friends"
           width="300"
         />
       </div>
-      <div class="media-container">
-        <h4 class="contact-title">{{ $t("socialMedia") }}</h4>
-        <div class="items-container">
-          <a href="#" class="item">
+      <div class="footer__contact-container__media">
+        <h4
+          class="footer__contact-container__title footer__contact-container__title--media"
+        >
+          {{ $t("socialMedia") }}
+        </h4>
+        <div class="footer__contact-container__media__items">
+          <a href="#" class="footer__contact-container__media__items__item">
             <i class="fa-brands fa-facebook"></i>
           </a>
-          <a href="#" class="item">
+          <a href="#" class="footer__contact-container__media__items__item">
             <i class="fa-brands fa-instagram"></i>
           </a>
-          <!-- <a href="#" class="item">
-            <i class="fa-brands fa-pinterest"></i>
-          </a>
-          <a href="#" class="item">
-            <i class="fa-brands fa-twitter"></i>
-          </a> -->
         </div>
       </div>
     </div>
-    <div class="copyright-container">
-      <p class="copyright">
+    <div class="footer__copyright-container">
+      <p class="footer__copyright-container__text">
         Copyright 2024 &copy; Ewelina Komenda & Magdalena Durbacz - Wedding
         Friends
       </p>
-      <p class="website-author">Website created by Kamil Pigulak</p>
+      <p class="footer__copyright-container__text">
+        Website created by Kamil Pigulak
+      </p>
     </div>
   </footer>
 </template>
 <script setup></script>
 
 <style lang="scss">
-.footer-container {
+.footer {
   background-color: $gray-color;
 
-  .contact-container {
+  &__contact-container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -81,7 +101,7 @@
       align-items: start;
     }
 
-    .image-container {
+    &__image {
       img {
         border-radius: 20px;
         width: 200px;
@@ -92,43 +112,53 @@
       }
     }
 
-    .main-contact-container,
-    .media-container {
+    &__title {
+      font-size: 20px;
+      line-height: 24px;
+      font-weight: 500;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+      text-align: left;
+
+      @media (min-width: $md-screen) {
+        font-size: 20px;
+        line-height: 24px;
+      }
+
+      @media (min-width: $lg-screen) {
+        font-size: 24px;
+        line-height: 28px;
+      }
+
+      &--media {
+        text-align: center;
+
+        @media (min-width: $lg-screen) {
+          text-align: left;
+        }
+      }
+    }
+
+    &__info,
+    &__media {
       padding: 0 30px;
       background-color: $gray-color;
       width: fit-content;
+    }
 
-      .contact-title {
-        font-size: 20px;
-        line-height: 24px;
-        font-weight: 400;
-        text-transform: uppercase;
-        margin-bottom: 20px;
-        text-align: left;
-
-        @media (min-width: $md-screen) {
-          font-size: 20px;
-          line-height: 24px;
-        }
-
-        @media (min-width: $lg-screen) {
-          font-size: 24px;
-          line-height: 28px;
-        }
-      }
-
-      .contact-data-container {
+    &__info {
+      &__data-container {
         display: flex;
         flex-direction: column;
         align-items: start;
         gap: 20px;
 
-        .data {
+        &__data {
           display: flex;
           align-items: center;
           gap: 10px;
 
-          .data-icon {
+          &__icon {
             color: $primary-color;
             font-size: 20px;
             width: 20px;
@@ -139,14 +169,15 @@
             }
           }
 
-          .data-link {
+          &__link {
             text-decoration: none;
             color: #000;
             cursor: pointer;
+            font-weight: 400;
           }
 
-          .data-link,
-          .static-data {
+          &__link,
+          &__static {
             font-size: 14px;
             line-height: 16px;
           }
@@ -154,15 +185,8 @@
       }
     }
 
-    .media-container {
-      .contact-title {
-        text-align: center;
-
-        @media (min-width: $lg-screen) {
-          text-align: left;
-        }
-      }
-      .items-container {
+    &__media {
+      &__items {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -172,7 +196,7 @@
           justify-content: flex-start;
         }
 
-        .item {
+        &__item {
           text-decoration: none;
           color: $primary-color;
 
@@ -183,7 +207,8 @@
       }
     }
   }
-  .copyright-container {
+
+  &__copyright-container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -193,8 +218,7 @@
     padding: 20px;
     font-size: 12px;
 
-    .copyright,
-    .website-author {
+    &__text {
       text-align: center;
     }
   }

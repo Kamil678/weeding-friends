@@ -1,18 +1,20 @@
 <template>
   <section class="basic-info-container">
-    <h1 class="basic-info-title">
+    <h1 class="basic-info-container__title">
       {{ $t("welcomeTitleHomePagePart1") }}
       <span class="name">{{ $t("name") }}</span
       >,<br /><span>{{ $t("welcomeTitleHomePagePart2") }}</span>
     </h1>
-    <div class="basic-info">
-      <div class="first-image owner-image">
+    <div class="basic-info-container__info">
+      <div
+        class="basic-info-container__info__owner-image basic-info-container__info__owner-image--first"
+      >
         <img
           src="../../assets/home/first-image-second-main-section.jpg"
           alt="First image owners weeding friends"
         />
       </div>
-      <div class="text-container">
+      <div class="basic-info-container__info__text-container">
         <p>
           {{ $t("firstTextInWelcomeHomePage") }}
         </p>
@@ -29,10 +31,12 @@
         <Button
           :text="$t('buttonTextInWelcomeHomePage')"
           href="/about"
-          class="know-us-better"
+          class="basic-info-container__info__text-container__know-us-better"
         />
       </div>
-      <div class="second-image owner-image">
+      <div
+        class="basic-info-container__info__owner-image basic-info-container__info__owner-image--second"
+      >
         <img
           src="../../assets/home/second-image-second-main-section.jpg"
           alt="Second image owners weeding friends"
@@ -48,7 +52,7 @@ import Button from "../shared/Button.vue";
 <style lang="scss">
 .basic-info-container {
   background-color: $gray-color;
-  padding: 3.125rem 2rem;
+  padding: 3.125rem 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -58,10 +62,11 @@ import Button from "../shared/Button.vue";
     padding: 5rem 2rem;
   }
 
-  .basic-info-title {
-    font-family: "Caudex", serif;
+  &__title {
+    font-family: "EB Garamond", serif;
     font-size: 50px;
     line-height: 56px;
+    font-weight: 600;
     text-align: center;
     margin-bottom: 3.125rem;
     font-size: 30px;
@@ -81,11 +86,10 @@ import Button from "../shared/Button.vue";
     .name {
       text-transform: uppercase;
       font-weight: 800;
-      //color: $primary-color;
     }
   }
 
-  .basic-info {
+  &__info {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -106,7 +110,7 @@ import Button from "../shared/Button.vue";
       max-width: 1600px;
     }
 
-    .text-container {
+    &__text-container {
       position: relative;
       width: 100%;
       background-color: #fff;
@@ -114,23 +118,27 @@ import Button from "../shared/Button.vue";
       flex-direction: column;
       align-items: center;
       gap: 30px;
-      padding: 50px;
+      padding: 20px;
       text-align: center;
-      font-weight: 300;
+      font-weight: 400;
       line-height: 20px;
+
+      @media (min-width: $lg-screen) {
+        padding: 50px;
+      }
 
       @media (min-width: $xxl-screen) {
         min-height: 700px;
       }
 
-      .know-us-better {
+      &__know-us-better {
         margin-top: 30px;
       }
 
       p {
         span {
           &.italic {
-            font-weight: 300;
+            font-weight: 400;
             font-style: italic;
           }
 
@@ -142,7 +150,7 @@ import Button from "../shared/Button.vue";
       }
     }
 
-    .owner-image {
+    &__owner-image {
       z-index: 2;
       text-align: center;
 
@@ -158,7 +166,7 @@ import Button from "../shared/Button.vue";
         }
       }
 
-      &.first-image {
+      &--first {
         margin-right: 0;
 
         @media (min-width: $xl-screen) {
@@ -166,7 +174,7 @@ import Button from "../shared/Button.vue";
         }
       }
 
-      &.second-image {
+      &--second {
         margin-left: 0;
 
         @media (min-width: $xl-screen) {
@@ -177,4 +185,3 @@ import Button from "../shared/Button.vue";
   }
 }
 </style>
-../shared/Button.vue

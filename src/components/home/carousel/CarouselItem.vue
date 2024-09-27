@@ -8,11 +8,8 @@
     >
       <div
         :style="{ backgroundImage: `url(${slide.src})` }"
-        class="image-container"
+        class="carousel-item__image"
       ></div>
-      <h1 v-if="index === 0" class="quote">
-        {{ $t("quote") }}
-      </h1>
     </div>
   </transition>
 </template>
@@ -41,7 +38,7 @@ const transitionEffect = computed(() => {
   bottom: 0;
   right: 0;
 
-  .image-container {
+  &__image {
     height: 100%;
     width: 100%;
     background-size: cover;

@@ -1,6 +1,6 @@
 <template>
   <section class="carousel">
-    <div class="carousel-inner">
+    <div class="carousel__inner">
       <CarouselIndicators
         v-if="indicators"
         :total="slides.length"
@@ -15,6 +15,9 @@
         :index="index"
         :direction="direction"
       />
+      <h1 class="quote">
+        {{ $t("quote") }}
+      </h1>
       <CarouselControls
         v-if="controls"
         @prevImage="clickPrevImage"
@@ -23,7 +26,7 @@
     </div>
   </section>
   <div class="quote-container">
-    <h1 class="quote small-screen">
+    <h1 class="quote quote--small-screen">
       {{ $t("quote") }}
     </h1>
   </div>
@@ -121,7 +124,7 @@ onBeforeUnmount(() => {
   justify-content: center;
   width: 100%;
 
-  .carousel-inner {
+  &__inner {
     height: 100%;
     width: 100%;
     position: relative;
@@ -131,10 +134,49 @@ onBeforeUnmount(() => {
 }
 
 .quote-container {
-  padding: 50px;
+  padding: 20px;
 
   @media (min-width: $lg-screen) {
     padding: 0;
+  }
+}
+
+.quote {
+  display: none;
+  position: absolute;
+  font-family: "EB Garamond", serif;
+  font-weight: 600;
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  font-size: 50px;
+  color: #fff;
+  width: 100%;
+  padding: 0 30px;
+
+  @media (min-width: $lg-screen) {
+    display: block;
+  }
+
+  &--small-screen {
+    display: block;
+    position: relative;
+    left: 0;
+    transform: translateX(0);
+    color: $primary-color;
+    font-size: 30px;
+    line-height: 36px;
+    padding: 0;
+
+    @media (min-width: $md-screen) {
+      font-size: 40px;
+      line-height: 46px;
+    }
+
+    @media (min-width: $lg-screen) {
+      display: none;
+    }
   }
 }
 </style>

@@ -36,6 +36,9 @@
   "owner2FourthInfo": "I'm responsible and I believe that after the first conversation, you'll feel like you're in good hands. You won't have to worry about organisation and logistics. I'll take care of the small details so that you can focus on what's most important: celebrating and enjoying your special moments!",
   "owner2FifthInfo": "I can bring my ideas to life and put them together like a jigsaw puzzle, just like a storm of curls on my head.",
   "owner2SixthInfo": "Hiring me to help you plan your celebration means you won't have to worry about problems from the start. You'll benefit from my experience, and you'll get to decide what your day will look like.",
+  "basicOfferFirstText": "Do you wish for your wedding to be perfect and stress-free? Trust our comprehensive service - we will take care of all the details, allowing you to fully enjoy your special day.",
+  "basicOfferSecondText": "Are you dreaming of the wedding of your dreams, but day-to-day responsibilities are taking up your time? Take advantage of our partial organisation - we will take care of some of the preparations so that you can fully enjoy the day ahead.",
+  "basicOfferThirdText": "At WeddingFriends we take care of the coordination of your wedding day so that you can enjoy every moment, safe in the knowledge that everything is in the hands of professionals. We offer emergency assistance and organise magical outdoor weddings and intimate humanist weddings. We also organise unforgettable special events.",
   "offer1Title": "Full organisation of the wedding day and the reception",
   "offer1FirstText": "Full Wedding Organisation is for couples who want to leave the planning of their wedding entirely in the hands of professionals. This allows you to enjoy your wedding day without the stress of organising it. It is the best option for busy couples.",
   "offer1SecondText": "The professional care of the wedding planners will ensure that all the formalities of the wedding are taken care of and that your everyday life and most importantly your relationship will not suffer.",
@@ -58,7 +61,7 @@
   "offer2Title": "Partial organisation of the wedding, based on the work already started + organisation of the reception",
   "offer2FirstText": "This is an option for couples who have already started to make their wedding dreams come true, have taken some steps to organise the day themselves, but in the rush of the preparations have changed their minds and decided to put their wedding in the hands of professionals. Such a step will take the burden of responsibility off your shoulders and allow you to focus on the feeling.",
   "offer2SecondText": "This package is a great option for people who feel overwhelmed by the idea of organising their wedding on their own, but would like some professional support.",
-  "offer2PackegeItem1": "Discussion of collaboration and organisationalstepsalreadytaken - coffeemeeting with the couple;",
+  "offer2PackegeItem1": "Discussion of collaboration and organisation all steps already taken - coffee meeting with the couple;",
   "offer2PackegeItem2": "Individual budget setting based on work already started;",
   "offer2PackegeItem3": "Contact with sub-contractors as agreed;",
   "offer2PackegeItem4": "Coordination of the weddingday (link to packageabove);",
@@ -97,5 +100,6 @@
   "offer7AdditionalText2": "Now you don't have to worry about organising them. Leave it to us, give us a call and find out more over a cup of coffee.",
   "offer8Title": "Online / on-site consultation",
   "offer8FirstText": "We can offer you an online or on-site consultation, depending on what you need. We'll give you the professional advice you need to solve any tricky situations. We'll answer any questions you have about getting ready for your ceremony, so it goes as planned and as stress-free as possible.",
-  "email": "E-mail"
+  "email": "E-mail",
+  "phone": "Phone"
 }

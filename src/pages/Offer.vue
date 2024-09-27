@@ -1,5 +1,5 @@
 <template>
-  <div class="page offer-page">
+  <div class="page page--offer">
     <h1 class="page__title">{{ $t("navOffer") }}</h1>
     <div class="offers">
       <OfferBox v-for="(offer, index) in offers" :key="index" :offer="offer" />
@@ -15,7 +15,7 @@ const { t } = useI18n();
 const offers = computed(() => [
   {
     id: 1,
-    src: new URL("../assets/gallery/image-42.jpg", import.meta.url).href,
+    src: new URL("../assets/offer/offer-1.jpg", import.meta.url).href,
     alt: "The groom gives the bride's hand ",
     title: t("offer1Title"),
     firstText: t("offer1FirstText"),
@@ -47,7 +47,7 @@ const offers = computed(() => [
   },
   {
     id: 2,
-    src: new URL("../assets/gallery/image-43.jpg", import.meta.url).href,
+    src: new URL("../assets/offer/offer-2.jpg", import.meta.url).href,
     alt: "Guest list board",
     title: t("offer2Title"),
     firstText: t("offer2FirstText"),
@@ -70,7 +70,7 @@ const offers = computed(() => [
   },
   {
     id: 3,
-    src: new URL("../assets/gallery/image-16.jpg", import.meta.url).href,
+    src: new URL("../assets/offer/offer-3.jpg", import.meta.url).href,
     alt: "Groom holding bride's dress",
     title: t("offer3Title"),
     firstText: t("offer3FirstText"),
@@ -97,7 +97,7 @@ const offers = computed(() => [
   },
   {
     id: 4,
-    src: new URL("../assets/gallery/image-45.jpg", import.meta.url).href,
+    src: new URL("../assets/offer/offer-4.jpg", import.meta.url).href,
     alt: "The wall behind the bride and groom",
     title: t("offer4Title"),
     firstText: t("offer4FirstText"),
@@ -114,7 +114,7 @@ const offers = computed(() => [
   },
   {
     id: 5,
-    src: new URL("../assets/gallery/image-38.jpg", import.meta.url).href,
+    src: new URL("../assets/offer/offer-5.jpg", import.meta.url).href,
     alt: "The wall behind the bride and groom",
     title: t("offer5Title"),
     firstText: t("offer5FirstText"),
@@ -131,7 +131,7 @@ const offers = computed(() => [
   },
   {
     id: 6,
-    src: new URL("../assets/gallery/image-38.jpg", import.meta.url).href,
+    src: new URL("../assets/offer/offer-6.jpg", import.meta.url).href,
     alt: "The wall behind the bride and groom",
     title: t("offer6Title"),
     firstText: t("offer6FirstText"),
@@ -151,7 +151,8 @@ const offers = computed(() => [
   },
   {
     id: 7,
-    src: new URL("../assets/gallery/image-22.jpg", import.meta.url).href,
+    src: new URL("../assets/gallery/horizontal/image-26.jpg", import.meta.url)
+      .href,
     alt: "The wall behind the bride and groom",
     title: t("offer7Title"),
     firstText: t("offer7FirstText"),
@@ -169,7 +170,7 @@ const offers = computed(() => [
   },
   {
     id: 8,
-    src: new URL("../assets/offer/consultations.jpg", import.meta.url).href,
+    src: new URL("../assets/offer/offer-8.jpg", import.meta.url).href,
     alt: "Owners with laptops",
     title: t("offer8Title"),
     firstText: t("offer8FirstText"),
@@ -180,34 +181,15 @@ const offers = computed(() => [
 </script>
 
 <style lang="scss">
-.offer-page {
-  margin-left: 2rem;
-  margin-right: 2rem;
-  margin-bottom: 110px;
-  max-width: 1600px;
+.offers {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 70px;
 
   @media (min-width: $xl-screen) {
-    margin-left: 80px;
-    margin-right: 80px;
-  }
-
-  @media (min-width: $xxl-screen) {
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 100px;
-    padding-right: 100px;
-  }
-
-  .offers {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 70px;
-
-    @media (min-width: $xl-screen) {
-      gap: 150px;
-    }
+    gap: 150px;
   }
 }
 </style>

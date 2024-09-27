@@ -1,46 +1,48 @@
 <template>
-  <section class="basic-offers-wrap">
-    <h2 class="basic-offer-title">Oferta</h2>
-    <div class="basic-offers-container">
+  <section class="third-home-section">
+    <h2 class="third-home-section__title">{{ $t("navOffer") }}</h2>
+    <div class="third-home-section__basic-offers">
       <BasicOfferBox v-for="offer in offers" :key="offer.id" :offer="offer" />
     </div>
-    <Button :text="$t('seeMore')" href="/offer" class="see-more-btn" />
+    <Button
+      :text="$t('seeMore')"
+      href="/offer"
+      class="third-home-section__btn"
+    />
   </section>
 </template>
 <script setup>
+import { computed } from "vue";
 import Button from "../shared/Button.vue";
 import BasicOfferBox from "./BasicOfferBox.vue";
 import { useI18n } from "vue-i18n";
 
 const { t } = useI18n();
 
-const offers = [
+const offers = computed(() => [
   {
     id: 1,
     src: new URL("../../assets/home/basic-offer-1.jpg", import.meta.url).href,
     alt: "Holding hands with a wedding ring",
-    title: "Tekst 1",
     text: t("basicOfferFirstText"),
   },
   {
     id: 2,
     src: new URL("../../assets/home/basic-offer-2.png", import.meta.url).href,
     alt: "Bride and groom",
-    title: "Tekst 2",
     text: t("basicOfferSecondText"),
   },
   {
     id: 2,
     src: new URL("../../assets/home/basic-offer-3.png", import.meta.url).href,
     alt: "Wedding cake",
-    title: "Tekst 3",
     text: t("basicOfferThirdText"),
   },
-];
+]);
 </script>
 
 <style lang="scss">
-.basic-offers-wrap {
+.third-home-section {
   padding: 50px;
   display: flex;
   flex-direction: column;
@@ -50,11 +52,12 @@ const offers = [
     padding: 80px 100px;
   }
 
-  .basic-offer-title {
+  &__title {
     font-size: 34px;
     line-height: 38px;
     text-align: center;
-    font-family: "Caudex", serif;
+    font-family: "EB Garamond", serif;
+    font-weight: 500;
 
     @media (min-width: $md-screen) {
       font-size: 40px;
@@ -67,7 +70,7 @@ const offers = [
     }
   }
 
-  .basic-offers-container {
+  &__basic-offers {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -83,7 +86,7 @@ const offers = [
     }
   }
 
-  .see-more-btn {
+  &__btn {
     text-align: center;
   }
 }
