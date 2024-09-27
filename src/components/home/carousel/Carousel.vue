@@ -134,7 +134,7 @@ onBeforeUnmount(() => {
 }
 
 .quote-container {
-  padding: 50px;
+  padding: 20px;
 
   @media (min-width: $lg-screen) {
     padding: 0;
@@ -167,6 +167,7 @@ onBeforeUnmount(() => {
     color: $primary-color;
     font-size: 30px;
     line-height: 36px;
+    padding: 0;
 
     @media (min-width: $md-screen) {
       font-size: 40px;

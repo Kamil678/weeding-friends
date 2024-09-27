@@ -1,6 +1,6 @@
 <template>
   <section class="third-home-section">
-    <h2 class="third-home-section__title">Oferta</h2>
+    <h2 class="third-home-section__title">{{ $t("navOffer") }}</h2>
     <div class="third-home-section__basic-offers">
       <BasicOfferBox v-for="offer in offers" :key="offer.id" :offer="offer" />
     </div>
@@ -12,13 +12,14 @@
   </section>
 </template>
 <script setup>
+import { computed } from "vue";
 import Button from "../shared/Button.vue";
 import BasicOfferBox from "./BasicOfferBox.vue";
 import { useI18n } from "vue-i18n";
 
 const { t } = useI18n();
 
-const offers = [
+const offers = computed(() => [
   {
     id: 1,
     src: new URL("../../assets/home/basic-offer-1.jpg", import.meta.url).href,
@@ -37,7 +38,7 @@ const offers = [
     alt: "Wedding cake",
     text: t("basicOfferThirdText"),
   },
-];
+]);
 </script>
 
 <style lang="scss">

@@ -24,12 +24,13 @@
   </div>
 </template>
 <script setup>
+import { computed } from "vue";
 import ContactBox from "../components/contact/ContactBox.vue";
 import { useI18n } from "vue-i18n";
 
 const { t } = useI18n();
 
-const contactData = [
+const contactData = computed(() => [
   {
     icon: "fa-regular fa-envelope",
     title: t("email"),
@@ -54,7 +55,7 @@ const contactData = [
     data: "",
     href: "#",
   },
-];
+]);
 </script>
 
 <style lang="scss">

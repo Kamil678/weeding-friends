@@ -52,7 +52,7 @@ import Button from "../shared/Button.vue";
 <style lang="scss">
 .basic-info-container {
   background-color: $gray-color;
-  padding: 3.125rem 2rem;
+  padding: 3.125rem 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -118,10 +118,14 @@ import Button from "../shared/Button.vue";
       flex-direction: column;
       align-items: center;
       gap: 30px;
-      padding: 50px;
+      padding: 20px;
       text-align: center;
       font-weight: 400;
       line-height: 20px;
+
+      @media (min-width: $lg-screen) {
+        padding: 50px;
+      }
 
       @media (min-width: $xxl-screen) {
         min-height: 700px;

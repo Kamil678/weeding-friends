@@ -61,7 +61,7 @@
   "offer2Title": "Partial organisation of the wedding, based on the work already started + organisation of the reception",
   "offer2FirstText": "This is an option for couples who have already started to make their wedding dreams come true, have taken some steps to organise the day themselves, but in the rush of the preparations have changed their minds and decided to put their wedding in the hands of professionals. Such a step will take the burden of responsibility off your shoulders and allow you to focus on the feeling.",
   "offer2SecondText": "This package is a great option for people who feel overwhelmed by the idea of organising their wedding on their own, but would like some professional support.",
-  "offer2PackegeItem1": "Discussion of collaboration and organisationalstepsalreadytaken - coffeemeeting with the couple;",
+  "offer2PackegeItem1": "Discussion of collaboration and organisation all steps already taken - coffee meeting with the couple;",
   "offer2PackegeItem2": "Individual budget setting based on work already started;",
   "offer2PackegeItem3": "Contact with sub-contractors as agreed;",
   "offer2PackegeItem4": "Coordination of the weddingday (link to packageabove);",
@@ -100,5 +100,6 @@
   "offer7AdditionalText2": "Now you don't have to worry about organising them. Leave it to us, give us a call and find out more over a cup of coffee.",
   "offer8Title": "Online / on-site consultation",
   "offer8FirstText": "We can offer you an online or on-site consultation, depending on what you need. We'll give you the professional advice you need to solve any tricky situations. We'll answer any questions you have about getting ready for your ceremony, so it goes as planned and as stress-free as possible.",
-  "email": "E-mail"
+  "email": "E-mail",
+  "phone": "Phone"
 }
