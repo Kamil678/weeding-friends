@@ -1,7 +1,7 @@
 <template>
-  <div class="page">
-    <div class="contact-image"></div>
-    <div class="contact-boxes">
+  <div class="page contact">
+    <div class="contact__image"></div>
+    <div class="contact__boxes">
       <ContactBox
         v-for="(contact, index) in contactData"
         :key="index"
@@ -11,14 +11,14 @@
         :href="contact.href"
       />
     </div>
-    <div class="map">
+    <div class="contact__map">
       <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8961.554647561103!2d20.025055201142663!3d50.36505246103679!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4717a979b1df99af%3A0xa162768b2758e618!2sPartyzant%C3%B3w%2059%2C%2032-200%20Miech%C3%B3w!5e0!3m2!1sen!2spl!4v1724698903114!5m2!1sen!2spl"
         style="border: 0"
         allowfullscreen=""
         loading="lazy"
         referrerpolicy="no-referrer-when-downgrade"
-        class="map__frame"
+        class="contact__map__frame"
       ></iframe>
     </div>
   </div>
@@ -58,39 +58,42 @@ const contactData = [
 </script>
 
 <style lang="scss">
-.contact-image {
-  background-image: url(../assets/contact/contact.jpg);
-  background-size: cover;
-  background-position: top;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 70vh;
-  overflow: hidden;
-}
-.contact-boxes {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 30px;
-  padding: 0 30px 30px 30px;
-  margin-top: 50px;
-
-  @media (min-width: $sm-screen) {
-    padding: 0 50px 60px 50px;
-  }
-}
-
-.map {
-  margin-top: 50px;
-  width: 100%;
-  padding: 0 30px 30px 30px;
-
-  @media (min-width: $sm-screen) {
-    padding: 0 50px 60px 50px;
-  }
-
-  &__frame {
+.contact {
+  &__image {
+    background-image: url(../assets/contact/contact.jpg);
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
     width: 100%;
-    height: 700px;
+    height: 70vh;
+    overflow: hidden;
+  }
+
+  &__boxes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+    padding: 0 30px 30px 30px;
+    margin-top: 50px;
+
+    @media (min-width: $sm-screen) {
+      padding: 0 50px 60px 50px;
+    }
+  }
+
+  &__map {
+    margin-top: 50px;
+    width: 100%;
+    padding: 0 30px 30px 30px;
+
+    @media (min-width: $sm-screen) {
+      padding: 0 50px 60px 50px;
+    }
+
+    &__frame {
+      width: 100%;
+      height: 700px;
+    }
   }
 }
 </style>

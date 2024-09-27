@@ -53,15 +53,6 @@
             >{{ $t("navGallery") }}</router-link
           >
         </li>
-        <!-- <li class="nav-list-element">
-          <router-link
-            to="/opinions"
-            class="nav-list-link"
-            active-class="active"
-            @click="openMenu = false"
-            >{{ $t("navOpinions") }}</router-link
-          >
-        </li> -->
         <li class="header__nav__list__element">
           <router-link
             to="/contact"

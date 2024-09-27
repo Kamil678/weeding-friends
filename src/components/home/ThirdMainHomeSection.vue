@@ -1,10 +1,14 @@
 <template>
-  <section class="basic-offers-wrap">
-    <h2 class="basic-offer-title">Oferta</h2>
-    <div class="basic-offers-container">
+  <section class="third-home-section">
+    <h2 class="third-home-section__title">Oferta</h2>
+    <div class="third-home-section__basic-offers">
       <BasicOfferBox v-for="offer in offers" :key="offer.id" :offer="offer" />
     </div>
-    <Button :text="$t('seeMore')" href="/offer" class="see-more-btn" />
+    <Button
+      :text="$t('seeMore')"
+      href="/offer"
+      class="third-home-section__btn"
+    />
   </section>
 </template>
 <script setup>
@@ -37,7 +41,7 @@ const offers = [
 </script>
 
 <style lang="scss">
-.basic-offers-wrap {
+.third-home-section {
   padding: 50px;
   display: flex;
   flex-direction: column;
@@ -47,7 +51,7 @@ const offers = [
     padding: 80px 100px;
   }
 
-  .basic-offer-title {
+  &__title {
     font-size: 34px;
     line-height: 38px;
     text-align: center;
@@ -65,7 +69,7 @@ const offers = [
     }
   }
 
-  .basic-offers-container {
+  &__basic-offers {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -81,7 +85,7 @@ const offers = [
     }
   }
 
-  .see-more-btn {
+  &__btn {
     text-align: center;
   }
 }

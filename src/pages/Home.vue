@@ -1,5 +1,5 @@
 <template>
-  <main class="page home-page">
+  <main class="page page--home">
     <Slider />
     <SecondaryMainHomeSection />
     <ThirdMainHomeSection />
@@ -10,9 +10,3 @@ import Slider from "../components/home/Slider.vue";
 import SecondaryMainHomeSection from "../components/home/SecondaryMainHomeSection.vue";
 import ThirdMainHomeSection from "../components/home/ThirdMainHomeSection.vue";
 </script>
-
-<style lang="scss">
-.home-page {
-  margin-top: 100px;
-}
-</style>

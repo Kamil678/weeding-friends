@@ -8,7 +8,7 @@
     >
       <div
         :style="{ backgroundImage: `url(${slide.src})` }"
-        class="image-container"
+        class="carousel-item__image"
       ></div>
     </div>
   </transition>
@@ -38,7 +38,7 @@ const transitionEffect = computed(() => {
   bottom: 0;
   right: 0;
 
-  .image-container {
+  &__image {
     height: 100%;
     width: 100%;
     background-size: cover;

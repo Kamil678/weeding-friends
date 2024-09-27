@@ -27,5 +27,3 @@ const slides = [
   },
 ];
 </script>
-
-<style lang="scss"></style>

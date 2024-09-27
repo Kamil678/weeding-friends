@@ -3,7 +3,7 @@
     <button
       v-for="(item, index) in total"
       :key="index"
-      class="carousel-indicator-item"
+      class="carousel-indicators__item"
       :class="{ active: currentIndex === index }"
       @click="$emit('switchImage', index)"
     ></button>
@@ -28,7 +28,7 @@ defineEmits(["switchImage"]);
   //background-color: #fff;
   z-index: 2;
 
-  .carousel-indicator-item {
+  &__item {
     width: 15px;
     height: 15px;
     border: none;
