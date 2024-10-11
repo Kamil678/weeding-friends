@@ -11,7 +11,7 @@
 const images = [
   {
     id: 1,
-    src: new URL("../assets/gallery/vertical/image-1.jpg", import.meta.url)
+    src: new URL("../assets/gallery/vertical/image-1.JPG", import.meta.url)
       .href,
     alt: "Image from gallery 1",
   },
@@ -29,49 +29,49 @@ const images = [
   },
   {
     id: 4,
-    src: new URL("../assets/gallery/vertical/image-4.jpg", import.meta.url)
+    src: new URL("../assets/gallery/vertical/image-4.JPG", import.meta.url)
       .href,
     alt: "Image from gallery 4",
   },
   {
     id: 5,
-    src: new URL("../assets/gallery/vertical/image-5.jpg", import.meta.url)
+    src: new URL("../assets/gallery/vertical/image-5.JPG", import.meta.url)
       .href,
     alt: "Image from gallery 5",
   },
   {
     id: 6,
-    src: new URL("../assets/gallery/vertical/image-6.jpg", import.meta.url)
+    src: new URL("../assets/gallery/vertical/image-6.JPG", import.meta.url)
       .href,
     alt: "Image from gallery 6",
   },
   {
     id: 7,
-    src: new URL("../assets/gallery/vertical/image-7.jpg", import.meta.url)
+    src: new URL("../assets/gallery/vertical/image-7.JPG", import.meta.url)
       .href,
     alt: "Image from gallery 7",
   },
   {
     id: 8,
-    src: new URL("../assets/gallery/vertical/image-8.jpg", import.meta.url)
+    src: new URL("../assets/gallery/vertical/image-8.JPG", import.meta.url)
       .href,
     alt: "Image from gallery 8",
   },
   {
     id: 9,
-    src: new URL("../assets/gallery/vertical/image-9.jpg", import.meta.url)
+    src: new URL("../assets/gallery/vertical/image-9.JPG", import.meta.url)
       .href,
     alt: "Image from gallery 9",
   },
   {
     id: 10,
-    src: new URL("../assets/gallery/vertical/image-10.jpg", import.meta.url)
+    src: new URL("../assets/gallery/vertical/image-10.JPG", import.meta.url)
       .href,
     alt: "Image from gallery 10",
   },
   {
     id: 11,
-    src: new URL("../assets/gallery/vertical/image-11.jpg", import.meta.url)
+    src: new URL("../assets/gallery/vertical/image-11.JPG", import.meta.url)
       .href,
     alt: "Image from gallery 11",
   },
@@ -160,12 +160,6 @@ const images = [
     alt: "Image from gallery 25",
   },
   {
-    id: 26,
-    src: new URL("../assets/gallery/vertical/image-26.jpg", import.meta.url)
-      .href,
-    alt: "Image from gallery 26",
-  },
-  {
     id: 27,
     src: new URL("../assets/gallery/horizontal/image-1.jpg", import.meta.url)
       .href,
@@ -227,207 +221,33 @@ const images = [
   },
   {
     id: 37,
-    src: new URL("../assets/gallery/horizontal/image-11.jpg", import.meta.url)
+    src: new URL("../assets/gallery/horizontal/image-11.JPG", import.meta.url)
       .href,
     alt: "Image from gallery 37",
   },
   {
     id: 38,
-    src: new URL("../assets/gallery/horizontal/image-12.jpg", import.meta.url)
+    src: new URL("../assets/gallery/horizontal/image-12.JPG", import.meta.url)
       .href,
     alt: "Image from gallery 38",
   },
   {
     id: 39,
-    src: new URL("../assets/gallery/horizontal/image-13.jpg", import.meta.url)
+    src: new URL("../assets/gallery/horizontal/image-13.JPG", import.meta.url)
       .href,
     alt: "Image from gallery 39",
   },
   {
     id: 40,
-    src: new URL("../assets/gallery/horizontal/image-14.jpg", import.meta.url)
+    src: new URL("../assets/gallery/horizontal/image-14.JPG", import.meta.url)
       .href,
     alt: "Image from gallery 40",
   },
   {
     id: 41,
-    src: new URL("../assets/gallery/horizontal/image-15.jpg", import.meta.url)
+    src: new URL("../assets/gallery/horizontal/image-15.JPG", import.meta.url)
       .href,
     alt: "Image from gallery 41",
-  },
-  {
-    id: 42,
-    src: new URL("../assets/gallery/horizontal/image-16.jpg", import.meta.url)
-      .href,
-    alt: "Image from gallery 42",
-  },
-  {
-    id: 43,
-    src: new URL("../assets/gallery/horizontal/image-17.jpg", import.meta.url)
-      .href,
-    alt: "Image from gallery 43",
-  },
-  {
-    id: 44,
-    src: new URL("../assets/gallery/horizontal/image-18.jpg", import.meta.url)
-      .href,
-    alt: "Image from gallery 44",
-  },
-  {
-    id: 45,
-    src: new URL("../assets/gallery/horizontal/image-19.jpg", import.meta.url)
-      .href,
-    alt: "Image from gallery 45",
-  },
-  {
-    id: 46,
-    src: new URL("../assets/gallery/horizontal/image-20.jpg", import.meta.url)
-      .href,
-    alt: "Image from gallery 46",
-  },
-  {
-    id: 47,
-    src: new URL("../assets/gallery/horizontal/image-21.jpg", import.meta.url)
-      .href,
-    alt: "Image from gallery 47",
-  },
-  {
-    id: 48,
-    src: new URL("../assets/gallery/horizontal/image-22.jpg", import.meta.url)
-      .href,
-    alt: "Image from gallery 48",
-  },
-  {
-    id: 49,
-    src: new URL("../assets/gallery/horizontal/image-23.jpg", import.meta.url)
-      .href,
-    alt: "Image from gallery 49",
-  },
-  {
-    id: 50,
-    src: new URL("../assets/gallery/horizontal/image-24.jpg", import.meta.url)
-      .href,
-    alt: "Image from gallery 50",
-  },
-  {
-    id: 51,
-    src: new URL("../assets/gallery/horizontal/image-25.jpg", import.meta.url)
-      .href,
-    alt: "Image from gallery 51",
-  },
-  {
-    id: 52,
-    src: new URL("../assets/gallery/horizontal/image-26.jpg", import.meta.url)
-      .href,
-    alt: "Image from gallery 52",
-  },
-  {
-    id: 53,
-    src: new URL("../assets/gallery/horizontal/image-27.jpg", import.meta.url)
-      .href,
-    alt: "Image from gallery 53",
-  },
-  {
-    id: 54,
-    src: new URL("../assets/gallery/horizontal/image-28.jpg", import.meta.url)
-      .href,
-    alt: "Image from gallery 54",
-  },
-  {
-    id: 55,
-    src: new URL("../assets/gallery/horizontal/image-29.jpg", import.meta.url)
-      .href,
-    alt: "Image from gallery 55",
-  },
-  {
-    id: 56,
-    src: new URL("../assets/gallery/horizontal/image-30.jpg", import.meta.url)
-      .href,
-    alt: "Image from gallery 56",
-  },
-  {
-    id: 57,
-    src: new URL("../assets/gallery/horizontal/image-31.jpg", import.meta.url)
-      .href,
-    alt: "Image from gallery 57",
-  },
-  {
-    id: 58,
-    src: new URL("../assets/gallery/horizontal/image-32.jpg", import.meta.url)
-      .href,
-    alt: "Image from gallery 58",
-  },
-  {
-    id: 59,
-    src: new URL("../assets/gallery/horizontal/image-33.jpg", import.meta.url)
-      .href,
-    alt: "Image from gallery 59",
-  },
-  {
-    id: 60,
-    src: new URL("../assets/gallery/horizontal/image-34.jpg", import.meta.url)
-      .href,
-    alt: "Image from gallery 60",
-  },
-  {
-    id: 61,
-    src: new URL("../assets/gallery/horizontal/image-35.jpg", import.meta.url)
-      .href,
-    alt: "Image from gallery 61",
-  },
-  {
-    id: 62,
-    src: new URL("../assets/gallery/horizontal/image-36.jpg", import.meta.url)
-      .href,
-    alt: "Image from gallery 62",
-  },
-  {
-    id: 63,
-    src: new URL("../assets/gallery/horizontal/image-37.jpg", import.meta.url)
-      .href,
-    alt: "Image from gallery 63",
-  },
-  {
-    id: 64,
-    src: new URL("../assets/gallery/horizontal/image-38.jpg", import.meta.url)
-      .href,
-    alt: "Image from gallery 64",
-  },
-  {
-    id: 65,
-    src: new URL("../assets/gallery/horizontal/image-39.jpg", import.meta.url)
-      .href,
-    alt: "Image from gallery 65",
-  },
-  {
-    id: 66,
-    src: new URL("../assets/gallery/horizontal/image-40.jpg", import.meta.url)
-      .href,
-    alt: "Image from gallery 66",
-  },
-  {
-    id: 67,
-    src: new URL("../assets/gallery/horizontal/image-41.jpg", import.meta.url)
-      .href,
-    alt: "Image from gallery 67",
-  },
-  {
-    id: 68,
-    src: new URL("../assets/gallery/horizontal/image-42.jpg", import.meta.url)
-      .href,
-    alt: "Image from gallery 68",
-  },
-  {
-    id: 69,
-    src: new URL("../assets/gallery/horizontal/image-43.jpg", import.meta.url)
-      .href,
-    alt: "Image from gallery 69",
-  },
-  {
-    id: 70,
-    src: new URL("../assets/gallery/horizontal/image-44.jpg", import.meta.url)
-      .href,
-    alt: "Image from gallery 70",
   },
 ];
 </script>
