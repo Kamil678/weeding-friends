@@ -70,7 +70,7 @@ const offers = computed(() => [
   },
   {
     id: 3,
-    src: new URL("../assets/offer/offer-3.jpg", import.meta.url).href,
+    src: new URL("../assets/offer/offer-3.JPG", import.meta.url).href,
     alt: "Groom holding bride's dress",
     title: t("offer3Title"),
     firstText: t("offer3FirstText"),
@@ -114,7 +114,7 @@ const offers = computed(() => [
   },
   {
     id: 5,
-    src: new URL("../assets/offer/offer-5.jpg", import.meta.url).href,
+    src: new URL("../assets/offer/offer-5.JPG", import.meta.url).href,
     alt: "The wall behind the bride and groom",
     title: t("offer5Title"),
     firstText: t("offer5FirstText"),
@@ -151,8 +151,7 @@ const offers = computed(() => [
   },
   {
     id: 7,
-    src: new URL("../assets/gallery/horizontal/image-26.jpg", import.meta.url)
-      .href,
+    src: new URL("../assets/offer/offer-7.jpg", import.meta.url).href,
     alt: "The wall behind the bride and groom",
     title: t("offer7Title"),
     firstText: t("offer7FirstText"),
