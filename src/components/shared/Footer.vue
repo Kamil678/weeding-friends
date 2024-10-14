@@ -50,7 +50,7 @@
       </div>
       <div class="footer__contact-container__image">
         <img
-          src="../../assets/shared/footer-image.jpg"
+          src="../../assets/shared/footer-image.webp"
           alt="Photo of the owners of Wedding Friends"
           width="300"
         />

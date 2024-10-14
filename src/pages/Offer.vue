@@ -15,7 +15,7 @@ const { t } = useI18n();
 const offers = computed(() => [
   {
     id: 1,
-    src: new URL("../assets/offer/offer-1.jpg", import.meta.url).href,
+    src: new URL("../assets/offer/offer-1.webp", import.meta.url).href,
     alt: "The groom gives the bride's hand ",
     title: t("offer1Title"),
     firstText: t("offer1FirstText"),
@@ -47,7 +47,7 @@ const offers = computed(() => [
   },
   {
     id: 2,
-    src: new URL("../assets/offer/offer-2.jpg", import.meta.url).href,
+    src: new URL("../assets/offer/offer-2.webp", import.meta.url).href,
     alt: "Guest list board",
     title: t("offer2Title"),
     firstText: t("offer2FirstText"),
@@ -70,7 +70,7 @@ const offers = computed(() => [
   },
   {
     id: 3,
-    src: new URL("../assets/offer/offer-3.JPG", import.meta.url).href,
+    src: new URL("../assets/offer/offer-3.webp", import.meta.url).href,
     alt: "Groom holding bride's dress",
     title: t("offer3Title"),
     firstText: t("offer3FirstText"),
@@ -97,7 +97,7 @@ const offers = computed(() => [
   },
   {
     id: 4,
-    src: new URL("../assets/offer/offer-4.jpg", import.meta.url).href,
+    src: new URL("../assets/offer/offer-4.webp", import.meta.url).href,
     alt: "The wall behind the bride and groom",
     title: t("offer4Title"),
     firstText: t("offer4FirstText"),
@@ -114,7 +114,7 @@ const offers = computed(() => [
   },
   {
     id: 5,
-    src: new URL("../assets/offer/offer-5.JPG", import.meta.url).href,
+    src: new URL("../assets/offer/offer-5.webp", import.meta.url).href,
     alt: "The wall behind the bride and groom",
     title: t("offer5Title"),
     firstText: t("offer5FirstText"),
@@ -131,7 +131,7 @@ const offers = computed(() => [
   },
   {
     id: 6,
-    src: new URL("../assets/offer/offer-6.jpg", import.meta.url).href,
+    src: new URL("../assets/offer/offer-6.webp", import.meta.url).href,
     alt: "The wall behind the bride and groom",
     title: t("offer6Title"),
     firstText: t("offer6FirstText"),
@@ -151,7 +151,7 @@ const offers = computed(() => [
   },
   {
     id: 7,
-    src: new URL("../assets/offer/offer-7.jpg", import.meta.url).href,
+    src: new URL("../assets/offer/offer-7.webp", import.meta.url).href,
     alt: "The wall behind the bride and groom",
     title: t("offer7Title"),
     firstText: t("offer7FirstText"),
@@ -169,7 +169,7 @@ const offers = computed(() => [
   },
   {
     id: 8,
-    src: new URL("../assets/offer/offer-8.jpg", import.meta.url).href,
+    src: new URL("../assets/offer/offer-8.webp", import.meta.url).href,
     alt: "Owners with laptops",
     title: t("offer8Title"),
     firstText: t("offer8FirstText"),

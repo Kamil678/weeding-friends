@@ -34,10 +34,10 @@
             >{{ $t("contactMe") }}</a
           >
         </div>
-        <img src="../assets/about/owner-1.jpg" alt="Photo showing Ewelina" />
+        <img src="../assets/about/owner-1.webp" alt="Photo showing Ewelina" />
       </div>
       <div class="about-us__container about-us__container--second">
-        <img src="../assets/about/owner-2.jpg" alt="Photo showing Magdalena" />
+        <img src="../assets/about/owner-2.webp" alt="Photo showing Magdalena" />
         <div class="about-us__container__info-container">
           <h2 class="about-us__container__info-container__owner-name">
             Magdalena Durbacz

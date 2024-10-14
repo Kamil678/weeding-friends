@@ -61,7 +61,7 @@ const contactData = computed(() => [
 <style lang="scss">
 .contact {
   &__image {
-    background-image: url(../assets/contact/contact.jpg);
+    background-image: url(../assets/contact/contact.webp);
     background-size: cover;
     background-position: top;
     background-repeat: no-repeat;

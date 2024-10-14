@@ -10,7 +10,7 @@
         class="basic-info-container__info__owner-image basic-info-container__info__owner-image--first"
       >
         <img
-          src="../../assets/home/first-image-second-main-section.jpg"
+          src="../../assets/home/first-image-second-main-section.webp"
           alt="First image owners weeding friends"
         />
       </div>
@@ -38,7 +38,7 @@
         class="basic-info-container__info__owner-image basic-info-container__info__owner-image--second"
       >
         <img
-          src="../../assets/home/second-image-second-main-section.jpg"
+          src="../../assets/home/second-image-second-main-section.webp"
           alt="Second image owners weeding friends"
         />
       </div>
