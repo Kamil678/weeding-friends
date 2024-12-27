@@ -1,10 +1,14 @@
 <template>
-  <a :href="href" class="contact-box">
+  <a
+    :href="href"
+    class="contact-box"
+    :target="target ? '_blank' : ''"
+    :rel="target ? 'noopener noreferrer' : ''"
+  >
     <div class="contact-box__icon-container">
       <i class="contact-box__icon-container__icon" :class="icon"></i>
     </div>
     <span class="contact-box__title">{{ title }}</span>
-    <!-- <span class="contact-box__data">{{ data }}</span> -->
   </a>
 </template>
 <script setup>
@@ -25,6 +29,10 @@ const props = defineProps({
     type: String,
     required: true,
   },
+  target: {
+    type: Boolean,
+    default: false,
+  },
 });
 </script>
 
@@ -37,7 +45,6 @@ const props = defineProps({
   flex-direction: column;
   align-items: center;
   color: #000;
-  //width: 300px;
   transition: transform 0.3s ease;
 
   &:hover {

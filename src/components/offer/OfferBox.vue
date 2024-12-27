@@ -17,6 +17,13 @@
         v-if="(showMoreInfo && offer.moreInfo) || !offer.hasShowMoreButton"
         v-html="offer.moreInfo"
       ></div>
+      <div
+        v-if="showMoreInfo || !offer.hasShowMoreButton"
+        class="offer__info__price"
+      >
+        <i class="fa-solid fa-heart offer__info__price__icon"></i>
+        <p class="offer__info__text">{{ $t("priceText") }}</p>
+      </div>
       <button
         v-if="offer.hasShowMoreButton"
         @click="showMoreInfo = !showMoreInfo"
@@ -190,6 +197,19 @@ const showMoreInfo = ref(false);
         &:last-child {
           margin-bottom: 0;
         }
+      }
+    }
+
+    &__price {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      justify-content: center;
+      margin-top: 10px;
+
+      &__icon {
+        color: $primary-color;
+        font-size: 22px;
       }
     }
 

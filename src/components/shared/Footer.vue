@@ -62,10 +62,20 @@
           {{ $t("socialMedia") }}
         </h4>
         <div class="footer__contact-container__media__items">
-          <a href="#" class="footer__contact-container__media__items__item">
+          <a
+            href="https://www.facebook.com/share/pWVfuZhKuWFeD6Ur/?mibextid=wwXIfr"
+            rel="noopener noreferrer"
+            target="_blank"
+            class="footer__contact-container__media__items__item"
+          >
             <i class="fa-brands fa-facebook"></i>
           </a>
-          <a href="#" class="footer__contact-container__media__items__item">
+          <a
+            href="https://www.instagram.com/weddingfriends_/profilecard/?igsh=MXdydnJ3bDRhcGJ6ZA=="
+            rel="noopener noreferrer"
+            target="_blank"
+            class="footer__contact-container__media__items__item"
+          >
             <i class="fa-brands fa-instagram"></i>
           </a>
         </div>

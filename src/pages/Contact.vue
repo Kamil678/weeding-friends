@@ -9,6 +9,7 @@
         :title="contact.title"
         :data="contact.data"
         :href="contact.href"
+        :target="contact.target"
       />
     </div>
     <div class="contact__map">
@@ -47,13 +48,15 @@ const contactData = computed(() => [
     icon: "fa-brands fa-facebook",
     title: "Facebook",
     data: "",
-    href: "#",
+    href: "https://www.facebook.com/share/pWVfuZhKuWFeD6Ur/?mibextid=wwXIfr",
+    target: true,
   },
   {
     icon: "fa-brands fa-instagram",
     title: "Instagram",
     data: "",
-    href: "#",
+    href: "https://www.instagram.com/weddingfriends_/profilecard/?igsh=MXdydnJ3bDRhcGJ6ZA==",
+    target: true,
   },
 ]);
 </script>
