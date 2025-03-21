@@ -78,6 +78,14 @@
           >
             <i class="fa-brands fa-instagram"></i>
           </a>
+          <a
+            href="https://www.tiktok.com/@weddingfriends_"
+            rel="noopener noreferrer"
+            target="_blank"
+            class="footer__contact-container__media__items__item"
+          >
+            <i class="fa-brands fa-tiktok"></i>
+          </a>
         </div>
       </div>
     </div>

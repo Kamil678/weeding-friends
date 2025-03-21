@@ -58,6 +58,13 @@ const contactData = computed(() => [
     href: "https://www.instagram.com/weddingfriends_/profilecard/?igsh=MXdydnJ3bDRhcGJ6ZA==",
     target: true,
   },
+  {
+    icon: "fa-brands fa-tiktok",
+    title: "TikTok",
+    data: "",
+    href: "https://www.tiktok.com/@weddingfriends_",
+    target: true,
+  },
 ]);
 </script>
 
